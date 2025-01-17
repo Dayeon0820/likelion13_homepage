@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    width: 100vw;
+    background: #111;
+}
+h1{ /* 걍 색깔만 테스트 나중에 지우기 */
+    color:#FF7710;
+}
