@@ -1,8 +1,16 @@
+import "./App.css";
+
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Activites from "./activites/activites";
+
 function App() {
   return (
-    <div className="App">
-      <h1>멋사 13기 홈페이지</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/activites" element={<Activites />} />
+      </Routes>
+    </Router>
   );
 }
 

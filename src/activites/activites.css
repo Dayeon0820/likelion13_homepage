@@ -1,0 +1,148 @@
+#activites_body {
+  height: 110%;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.activites_header {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--white);
+}
+
+.atv_header-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 0;
+}
+
+.activites_header p {
+  font-size: 13px;
+  margin-top: 5px;
+  color: var(--white);
+}
+
+#atv_button-box {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.activites_main {
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--white);
+}
+
+.atv_main-title {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+  margin-top: 10px;
+  height: 35px;
+}
+
+.atv_main-title h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 15px;
+  color: white;
+}
+
+.atv_main-title h4 {
+  font-size: 13px;
+  font-family: 500;
+  color: var(--orange);
+}
+
+.atv_main-sub {
+  margin-left: 80px;
+  margin-top: 3px;
+  font-size: 11px;
+  color: var(--white);
+}
+
+#atv_curriculum-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#atv_curriculum-img img {
+  width: 70%;
+}
+
+.atv_footer-btn {
+  background-color: var(--orange);
+  width: 45px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 17px;
+}
+
+.atv_footer-btn:last-child {
+  background-color: rgba(88, 88, 88, 1);
+}
+
+/*버튼 컴포넌트 */
+#atv_button {
+  width: 180px;
+  height: 50px;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 8px;
+}
+
+.atv_button-clicked {
+  background-color: var(--orange);
+}
+
+.atv_button-default {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid var(--white);
+}
+
+#atv_button h2 {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 500;
+}
+
+#atv_button h4 {
+  font-size: 13px;
+  margin-top: 0;
+  font-weight: 600;
+}
+.atv_button-clicked h4 {
+  color: black;
+}
+
+.atv_button-default h4 {
+  color: var(--orange);
+}
+
+#atv_footer-btnBox {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+}
