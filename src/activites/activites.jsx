@@ -1,10 +1,19 @@
 import "../App.css";
 import "./activites.css";
 import Button from "./button";
+import ActivitesCurriculum from "./main_activites/curriculum_activites";
+import ActivitesSession from "./main_activites/session_activites";
+import ActivitesProject from "./main_activites/project_activites";
 import React, { useState } from "react";
 
 function Activites() {
   const [activeButton, setActiveButton] = useState(null);
+  const mainComponent = {
+    CURRICULUM: <ActivitesCurriculum />,
+    SESSION: <ActivitesSession />,
+    PROJECT: <ActivitesProject />,
+    GALLERY: <ActivitesProject />,
+  };
   return (
     <div id="activites_body" className="black">
       <header className="activites_header">
@@ -37,25 +46,7 @@ function Activites() {
           />
         </div>
       </header>
-      <main className="activites_main">
-        <div className="atv_main-title">
-          <h1>CURRICULUM</h1>
-          <h4>2025 멋쟁이사자처럼 국민대학교 13기 아기사자 교육일정</h4>
-        </div>
-        <p className="atv_main-sub">
-          멋쟁이사자처럼 국민대학교 13기 세션은 디자인 트랙과 개발 트랙 2가지로
-          나뉘어 진행합니다
-        </p>
-        <div id="atv_curriculum-img">
-          <img id="atv_curriculum-img" src="./curriculum.png" />
-        </div>
-      </main>
-      <footer className="activites_footer">
-        <div id="atv_footer-btnBox">
-          <div className="atv_footer-btn">개발</div>
-          <div className="atv_footer-btn">디자인</div>
-        </div>
-      </footer>
+      {mainComponent[activeButton] || <ActivitesCurriculum />}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 #activites_body {
-  height: 110%;
+  height: 110vh;
   overflow-y: auto;
   padding-bottom: 20px;
 }
@@ -38,7 +38,6 @@
 
 .activites_main {
   padding-bottom: 60px;
-  border-bottom: 1px solid var(--white);
 }
 
 .atv_main-title {
@@ -80,6 +79,10 @@
   width: 65%;
 }
 
+.activites_footer {
+  border-top: 1px solid var(--white);
+}
+
 .atv_footer-btn {
   background-color: var(--orange);
   width: 45px;
@@ -93,8 +96,11 @@
   margin-right: 17px;
 }
 
-.atv_footer-btn:last-child {
+.atv_footerBtn_default {
   background-color: rgba(88, 88, 88, 1);
+}
+.atv_footerBtn_clicked {
+  background-color: var(--orange);
 }
 
 /*버튼 컴포넌트 */
@@ -103,11 +109,12 @@
   height: 50px;
 
   border-radius: 10px;
+  flex-direction: column;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+
   box-sizing: border-box;
   margin: 0 8px;
 }
