@@ -7,7 +7,7 @@ import ActivitesProject from "./main_activites/project_activites";
 import React, { useState } from "react";
 
 function Activites() {
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState("CURRICULUM");
   const mainComponent = {
     CURRICULUM: <ActivitesCurriculum />,
     SESSION: <ActivitesSession />,

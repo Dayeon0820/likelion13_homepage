@@ -1,5 +1,5 @@
 #activites_body {
-  height: 110vh;
+  height: 100vh;
   overflow-y: auto;
   padding-bottom: 20px;
 }
@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid rgba(88, 88, 88, 1);
 }
 
 .atv_header-title {
@@ -76,11 +76,11 @@
 }
 
 #atv_curriculum-img img {
-  width: 65%;
+  width: 60%;
 }
 
 .activites_footer {
-  border-top: 1px solid var(--white);
+  border-top: 1px solid rgba(88, 88, 88, 1);
 }
 
 .atv_footer-btn {
@@ -117,6 +117,17 @@
 
   box-sizing: border-box;
   margin: 0 8px;
+  padding: 0;
+}
+
+.atv_btn-innerbox {
+  width: 100%;
+  height: 50%; /* 중앙 정렬 제대로 안되는 것 같은데 기분탓인가 */
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  align-items: center;
+  text-align: center;
 }
 
 .atv_button-clicked {
@@ -136,7 +147,7 @@
 }
 
 #atv_button h4 {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 0;
   font-weight: 600;
 }
@@ -152,4 +163,98 @@
   display: flex;
   margin-left: 80px;
   margin-top: 20px;
+}
+
+#atv-footer-imgBox {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#atv-footer-imgBox img {
+  height: 70px;
+}
+
+/*session 페이지 */
+
+.atv-section {
+  display: flex;
+  margin-top: 50px;
+}
+
+.atv-section_column:first-child {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.atv-section_column:first-child h1 {
+  color: var(--orange);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.atv-section_column:last-child {
+  border-top: 1px solid rgba(255, 119, 16, 0.3);
+  margin-left: 30px;
+  width: 70%;
+}
+
+.atv-section_column:last-child h1 {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.atv-section-innerbox {
+  margin: 30px 0 10px 0;
+  width: 80%;
+}
+
+.atv-section-innerbox p {
+  color: var(--white);
+  font-size: 11px;
+}
+
+.atv-section_colum_last {
+  border-bottom: 1px solid rgba(255, 119, 16, 0.3);
+  padding-bottom: 50px;
+}
+
+#session-footer {
+  margin-top: 20px;
+  border-top: 1px solid rgba(88, 88, 88, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.session-footer_btn {
+  border: 1px solid rgba(255, 119, 16, 0.5);
+  width: 180px;
+  height: 80px;
+  margin: 20px 7px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #1a1a1a;
+}
+
+.session-footer_btn h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+.session-footer_btn h4 {
+  color: var(--orange);
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+  font-weight: 500;
 }

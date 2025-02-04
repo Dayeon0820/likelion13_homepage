@@ -27,7 +27,10 @@ function ActivitesCurriculum() {
                 ? "atv_footerBtn_clicked"
                 : "atv_footerBtn_default"
             }`}
-            onClick={() => setActiveButton("development")}
+            onClick={() => {
+              setActiveButton("development");
+              console.log(activeButton);
+            }}
           >
             개발
           </div>
@@ -41,6 +44,13 @@ function ActivitesCurriculum() {
           >
             디자인
           </div>
+        </div>
+        <div id="atv-footer-imgBox">
+          {activeButton === "development" ? (
+            <img src="/development.png" />
+          ) : (
+            <img src="figma.png" />
+          )}
         </div>
       </footer>
     </div>
