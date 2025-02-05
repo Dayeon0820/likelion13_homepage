@@ -1,10 +1,11 @@
 import "../App.css";
 import React, { useState } from "react";
 import Page from "../common/page";
+import IntroductionAbout from "./main_about/introduction_about";
 
 function About() {
   const mainComponent = {
-    INTRODUCTION: <div />,
+    INTRODUCTION: <IntroductionAbout />,
     "OUR HISTORY": <div />,
     "WHAT WE ACHIEVE": <div />,
     PEOPLE: <div />,
