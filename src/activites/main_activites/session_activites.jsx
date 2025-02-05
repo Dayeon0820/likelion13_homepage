@@ -3,6 +3,7 @@ import "../activites.css";
 import React, { useState } from "react";
 
 function ActivitesSession() {
+  const trackArray = ["Django", "UI/UX", "GRAPHIC", "DESIGN PROCESS"];
   return (
     <div>
       <main className="activites_main">
@@ -26,6 +27,13 @@ function ActivitesSession() {
                 학습합니다. 개발자와의 원활한 의사소통을 위해 협엽룰을 익히고
                 서비스의 쿨리티를 높일 수 있는 심화된 디자인 세션을 진행합니다.
               </p>
+              <div className="atv-section-innerbox_left">
+                {trackArray.map((a, index) => (
+                  <div className="session_trackBox" key={index}>
+                    {a}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -41,6 +49,13 @@ function ActivitesSession() {
                 학습합니다. 개발자와의 원활한 의사소통을 위해 협엽룰을 익히고
                 서비스의 쿨리티를 높일 수 있는 심화된 디자인 세션을 진행합니다.
               </p>
+              <div className="atv-section-innerbox_left">
+                {trackArray.map((a, index) => (
+                  <div className="session_trackBox" key={index}>
+                    {a}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>

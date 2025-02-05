@@ -47,7 +47,12 @@ function ActivitesCurriculum() {
         </div>
         <div id="atv-footer-imgBox">
           {activeButton === "development" ? (
-            <img src="/development.png" />
+            <div>
+              <img src="/html.png" />
+              <img src="/git.png" />
+              <img src="/django.png" />
+              <img src="/aws.png" />
+            </div>
           ) : (
             <img src="figma.png" />
           )}

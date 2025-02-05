@@ -4,12 +4,8 @@ import React, { useState } from "react";
 
 function ActivitesProject() {
   return (
-    <div>
-      <main className="activites_main">
-        <div className="atv_main-title">
-          <h1>준비중 . . .</h1>
-        </div>
-      </main>
+    <div className="atv_project-title">
+      <h1>페이지 준비중입니다.</h1>
     </div>
   );
 }
