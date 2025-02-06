@@ -1,4 +1,5 @@
 import "../App.css";
+import "./common.css";
 import "../activites/activites.css";
 import Button from "./button";
 import React, { useState } from "react";
@@ -9,11 +10,11 @@ function Page({ title, subtitle, buttons, subComponent }) {
   );
 
   return (
-    <div id="activites_body" className="black">
-      <header className="activites_header">
-        <h1 className="atv_header-title">{title}</h1>
+    <div id="page_body" className="black">
+      <header className="page_header">
+        <h1 className="page_header-title">{title}</h1>
         <p>{subtitle}</p>
-        <div id="atv_button-box">
+        <div id="page_button-box">
           {buttons.map((button) => (
             <Button
               title={button.title}

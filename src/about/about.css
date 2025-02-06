@@ -73,3 +73,70 @@
   align-items: center;
   justify-content: center;
 }
+
+/*people page */
+#people_header {
+  padding-bottom: 60px;
+}
+
+#people_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#people-profile_container {
+  width: 60%;
+  max-width: 1200px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/*profile component */
+.ab_profile-box {
+  width: 180px;
+  padding: 4px;
+  padding-bottom: 17px;
+  border: 2px solid rgba(88, 88, 88, 1);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.ab_profile-img {
+  width: 180px;
+}
+
+.ab_profile-name {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-top: 5px;
+  height: 20px;
+}
+.ab_profile-name h2 {
+  color: var(--orange);
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ab_profile-part {
+  background-color: rgba(88, 88, 88, 1);
+  border-radius: 5px;
+  height: 20px;
+  padding: 0 7px;
+  font-size: 11px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab_profile-major {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 12px;
+  margin: 6px 14px 0 14px;
+}

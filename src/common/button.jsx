@@ -1,5 +1,6 @@
 import "../App.css";
 import React, { useState } from "react";
+import "./common.css";
 
 function Button({ title, detail, activeButton, setActiveButton }) {
   return (

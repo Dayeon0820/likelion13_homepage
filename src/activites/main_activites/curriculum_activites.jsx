@@ -1,20 +1,19 @@
 import "../../App.css";
 import "../activites.css";
 import React, { useState } from "react";
+import Subtitle from "../../common/subtitle";
 
 function ActivitesCurriculum() {
   const [activeButton, setActiveButton] = useState("development");
+  const title = "CURRICULUM";
+  const subtitle = "2025 멋쟁이사자처럼 국민대학교 13기 아기사자 교육일정";
+  const p = `멋쟁이사자처럼 국민대학교 13기 세션은 디자인 트랙과 개발 트랙 2가지로
+          나뉘어 진행합니다`;
   return (
     <div>
       <main className="activites_main">
-        <div className="atv_main-title">
-          <h1>CURRICULUM</h1>
-          <h4>2025 멋쟁이사자처럼 국민대학교 13기 아기사자 교육일정</h4>
-        </div>
-        <p className="atv_main-sub">
-          멋쟁이사자처럼 국민대학교 13기 세션은 디자인 트랙과 개발 트랙 2가지로
-          나뉘어 진행합니다
-        </p>
+        <Subtitle title={title} subtitle={subtitle} P={p} />
+
         <div id="atv_curriculum-img">
           <img id="atv_curriculum-img" src="./curriculum.png" />
         </div>

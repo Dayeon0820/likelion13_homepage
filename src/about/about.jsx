@@ -2,13 +2,14 @@ import "../App.css";
 import React, { useState } from "react";
 import Page from "../common/page";
 import IntroductionAbout from "./main_about/introduction_about";
+import { PeopleAbout, ProfileAbout } from "./main_about/people_about";
 
 function About() {
   const mainComponent = {
     INTRODUCTION: <IntroductionAbout />,
     "OUR HISTORY": <div />,
     "WHAT WE ACHIEVE": <div />,
-    PEOPLE: <div />,
+    PEOPLE: <PeopleAbout />,
   };
 
   const title = "ABOUT US";
