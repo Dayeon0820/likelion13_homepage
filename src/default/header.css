@@ -1,0 +1,57 @@
+.header{
+    width: 100vw;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px 5%;
+    /* background: #333; */
+    border-bottom: 1px solid #585858;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+.logoTitle{
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    /* border: 1px solid #fff; */
+}
+.logoHighlight{
+    color: #FF7710;
+}
+
+.headerNavbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+   /*  border: 1px solid #fff; */
+    font-size: 13px;
+    font-weight: 500;
+}
+.headerNavbar > ul{
+    display: flex;
+    gap: 25px;
+}
+.headerNavbar > ul > li {
+    cursor: pointer;
+   /*  border: 1px solid #fff; */
+}
+.headerNavbar > ul > li:hover{
+    color: #FF7710;
+}
+.headerNavbar > .loginBox{
+    background: #FF7710;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.headerNavbar > .loginBox:hover{
+    background: #fff;
+    color: #FF7710;
+}
