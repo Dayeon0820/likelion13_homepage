@@ -3,7 +3,7 @@ import "../activites.css";
 import React, { useState } from "react";
 import CommonActivites from "./common_activites";
 
-function ActivitesProject() {
+function ActivitesGallery() {
   const [activeButton, setActiveButton] = useState("11");
   return (
     <div>
@@ -32,18 +32,9 @@ function ActivitesProject() {
           12기
         </div>
       </header>
-      <main id="atv-project_main">
-        <div id="atv-project-main_container">
-          <CommonActivites />
-          <CommonActivites />
-          <CommonActivites />
-          <CommonActivites />
-          <CommonActivites />
-          <CommonActivites />
-        </div>
-      </main>
+      <main id="atv-gallery_main"></main>
     </div>
   );
 }
 
-export default ActivitesProject;
+export default ActivitesGallery;

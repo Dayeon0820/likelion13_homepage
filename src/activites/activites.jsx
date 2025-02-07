@@ -2,6 +2,7 @@ import "../App.css";
 import ActivitesCurriculum from "./main_activites/curriculum_activites";
 import ActivitesSession from "./main_activites/session_activites";
 import ActivitesProject from "./main_activites/project_activites";
+import ActivitesGallery from "./main_activites/gallery_activites";
 import React, { useState } from "react";
 import Page from "../common/page";
 
@@ -10,7 +11,7 @@ function Activites() {
     CURRICULUM: <ActivitesCurriculum />,
     SESSION: <ActivitesSession />,
     PROJECT: <ActivitesProject />,
-    GALLERY: <ActivitesProject />,
+    GALLERY: <ActivitesGallery />,
   };
 
   const title = "ACTIVITES";

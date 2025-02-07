@@ -64,16 +64,16 @@ function ActivitesSession() {
           <h4>월/목</h4>
         </div>
         <div className="session-footer_btn">
-          <h2>주 2회 세션 진행</h2>
-          <h4>월/목</h4>
+          <h4>대면 원칙</h4>
+          <p>*일부 세션 줌 가능</p>
         </div>
         <div className="session-footer_btn">
-          <h2>주 2회 세션 진행</h2>
-          <h4>월/목</h4>
+          <h4>18:30 시작, 1-2시간</h4>
+          <p>*변동 가능</p>
         </div>
         <div className="session-footer_btn">
-          <h2>주 2회 세션 진행</h2>
-          <h4>월/목</h4>
+          <h2>강의실 대여 예정</h2>
+          <h4>공학관, 복지관</h4>
         </div>
       </footer>
     </div>
