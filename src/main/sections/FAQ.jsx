@@ -11,7 +11,7 @@ const FAQ = () =>{
     ]
 
     return(
-        <section id="FAQSection" className='mainSection'>
+        <section id="FAQSection" className='mainSection scrollSection'>
             <div className="FAQLogoBox">
                 <img src={Possibility} alt="" />
             </div>

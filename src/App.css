@@ -15,10 +15,9 @@ button{
     border: none;
     cursor: pointer;
 }
-/* html,body{
-    overflow-x: hidden;
-    overflow-y: auto;
-} */
+html,body{
+    scroll-behavior: smooth;
+}
 body{
     width: 100vw;
     background: #111;

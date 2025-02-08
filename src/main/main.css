@@ -1,5 +1,8 @@
 #main{
     padding-top: 50px;
+    height: 100vh;
+    overflow-y: auto;
+    /* scroll-snap-type: y proximity; *//* 스크롤 */
 }
 
 .mainSection{
@@ -8,6 +11,12 @@
     height: calc(100vh - 50px);
     padding: 8vh 7vw;
     /* border: 1px solid #fff; */ /* 임시 구분용 */
+
+    
+}
+
+.scrollSection{ 
+    /* scroll-snap-align: center; */
 }
 
 /* ===== recruitmentSection =======*/
@@ -31,16 +40,7 @@
     color: #fff;
     letter-spacing: 1.5px;
 }
-/* .mainLogoContainer > h1::before{
-    content: "";
-    display: inline-block;
-    background: url("../img/LIKELION\ UNIV_brandlogo.svg") no-repeat center;
-    background-size: contain;
-    height: 1em;
-    width: auto;
-    aspect-ratio: 28/14.52;
-    vertical-align: middle;
-} */
+
 .kmuTxt{
     position: relative;
     /* padding: 10px; */
@@ -195,12 +195,13 @@
 /* ===== whoWeAreSection =======*/
 #WWASection{
     width: 100%;
-    height: auto;
+    height: 60vh;
     background: #111;
     /* border: 1px solid #fff; */
     padding: 5vh 7vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5vh;
 }
 .WWATxt{
@@ -289,11 +290,57 @@
     background: #111;
     width: 70%;
     height: 100%;
+    display: flex;
+
+}
+.historyWrapper > .historyPoints{
+    height: 100%;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
-.historyLists{
+.historyPoints > span{
+    display: inline-block;
+    background-size: contain;
     position: relative;
-    padding-left: 70px;
+}
+.startPoint{
+    background:url("../img/history_dot_small.png")no-repeat center;
+    width: 22px;
+    height: 22px;
+}
+.endPoint{
+    background: url("../img/history_dot_big.png") no-repeat center;
+    width: 55px;
+    height: 55px;
+}
+.historyLine {
+    position: absolute;
+    top: 15px; 
+    width: 2px; 
+    height: 0; 
+    border-radius: 5px;
+    background: #FF7710;
+    
+    opacity: 0;
+}
+.animateLine{
+    animation: drawLine 3s forwards;
+    opacity: 1;
+}
+
+@keyframes drawLine {
+    to {
+        height: calc(100% - 40px); 
+    }
+}
+
+.historyWrapper > .historyLists{
+    position: relative;
+    /* padding-left: 70px; */
     height: 100%;
     color: #fff;
     display: flex;
@@ -309,25 +356,24 @@
 
     opacity: 0;
     transform: translateY(-20px);
-    animation: showHistoryItem 1s forwards;
+    transition: opacity 1s, transform 1s;
 }
+.historyLists li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .historyLists li:nth-child(1){
-    animation-delay: 0s;
+    transition-delay: 0s;
 }
 .historyLists li:nth-child(2){
-    animation-delay: 0.4s;
+    transition-delay: 0.4s;
     padding-bottom: 2vh;
 }
 .historyLists li:nth-child(3){
-    animation-delay: 1.5s;
+    transition-delay: 1.1s;
 }
 
-@keyframes showHistoryItem {
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .historyLists li .content{
     font-size: 14px;
@@ -346,22 +392,6 @@
     margin-left: 30px;
 }
 
-.historyWrapper::before{
-    content: "";
-    position: absolute;
-    left: 1%;
-    top: 0;
-    width: 3px;
-    height: 0;
-    background: #FF7710;
-    animation: drawLine 3s forwards;
-}
-
-@keyframes drawLine{
-    to{
-        height: 100%;
-    }
-}
 
 
 /* ===== FAQSection =======*/
@@ -430,10 +460,10 @@
 }
 
 #joinUsSection > .contentWrapper{
-    background: linear-gradient(0deg, #272727 65%, #2e2e2e 100%);
+    background: linear-gradient(0deg, #222222 65%, #2e2e2e 100%);
    /*  background: #2b2b2b; */
     width: 100%;   
-    height: 98%;
+    height: 95%;
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
     padding: 5vh 1vw;
@@ -449,7 +479,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5vh 0;
+    padding: 2vh 0;
  }
  .joinUsHeader > img{
     width: 55px;

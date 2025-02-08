@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "../main.css";
-/* import likeLionPhoto from"../../img/likelion_group_photo.jpg" */
 
 const RecruitmentInfo = () => {
     const scheduleData = [
@@ -12,7 +11,7 @@ const RecruitmentInfo = () => {
     ]
 
     return(
-        <section id="recruitmentSection" className="mainSection">
+        <section id="recruitmentSection" className="mainSection scrollSection">
             <div className="mainLogoContainer">
                  <h1>LIKELION UNIV. <span className='logoHighlight'>X</span> <span className='kmuTxt'>KMU</span></h1>
                  <button className="aboutUsBtn commonBtn">ABOUT US↗</button>

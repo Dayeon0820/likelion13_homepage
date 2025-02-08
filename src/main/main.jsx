@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import "./main.css";
 import RecruitmentInfo from "./sections/recruitmentInfo";
 import WhoWeAre from "./sections/whoWeAre";
