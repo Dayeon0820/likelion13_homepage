@@ -15,8 +15,23 @@ button{
     border: none;
     cursor: pointer;
 }
-
+/* html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+} */
 body{
     width: 100vw;
     background: #111;
+    overflow: overlay;
 }
+
+.font12{
+    font-size: 12px;
+}
+.font14{
+    font-size: 14px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+} /*스크롤바 너비 때문에 화면이 넘침 */

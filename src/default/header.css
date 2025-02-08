@@ -2,8 +2,8 @@
     width: 100vw;
     height: 50px;
     box-sizing: border-box;
-    padding: 10px 5%;
-    /* background: #333; */
+    padding: 10px 5vw;
+    background: #111;
     border-bottom: 1px solid #585858;
     display: flex;
     justify-content: space-between;
@@ -41,6 +41,7 @@
 }
 .headerNavbar > ul > li:hover{
     color: #FF7710;
+    transition: color 0.3s ease;
 }
 .headerNavbar > .loginBox{
     background: #FF7710;
