@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const WhoWeAre =()=>{
 
     return(
-        <section id="WWASection" className='scrollSection'>
+        <section id="WWASection" className='scrollSection_center'>
             <h3 className="WWATxt">
                 <span className='logoHighlight'>ABOUT US</span>
                 WHO WE ARE

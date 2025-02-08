@@ -11,7 +11,7 @@ const JoinUs = () => {
     ];
 
     return (
-        <section id="joinUsSection" className="mainSection">
+        <section id="joinUsSection" className="mainSection scrollSection">
             <div className="contentWrapper">
                 <div className="joinUsHeader">
                     <img src={LikeLionKMULogo} alt="Like Lion KMU Logo" />
