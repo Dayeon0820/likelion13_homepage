@@ -22,7 +22,7 @@ const RecruitmentInfo = () => {
                 <div className="infoBox">
                     <div className="infoTxt">
                         <h3>멋쟁이사자처럼 at 국민대</h3>
-                        <h2>12기 아기사자 모집</h2>
+                        <h2>13기 아기사자 모집</h2>
                         <p>멋쟁이사자처럼 at 국민대가<br/> 성공으로 도약할 여러분을 기다리고 있어요!</p>
                     </div>
                     <ul className="schedule">
