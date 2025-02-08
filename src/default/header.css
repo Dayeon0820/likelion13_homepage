@@ -16,6 +16,21 @@
     display: inline-block;
     font-size: 17px;
     /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.logoTitle:nth-child(1)::before{
+    content:"";
+    display: inline-block;
+    height: 17px;
+    width: 22px;
+    background: url("../img/LIKELION\ UNIV_brandlogo_small.png")no-repeat center;
+    background-size: contain;
+    /* border: 1px solid #fff; */
+}
+.logoTitle > span{
+    margin: 0 2px;
 }
 .logoHighlight{
     color: #FF7710;

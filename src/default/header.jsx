@@ -1,6 +1,7 @@
 import React from 'react';
 import "./header.css";
 import "./default.css";
+import smallLogo from "../img/LIKELION UNIV_full_brandlogo_small.svg";
 
 const Header=()=>{
     
