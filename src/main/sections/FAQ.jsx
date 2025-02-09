@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import React, { useState,useEffect, useRef } from 'react';
 import Possibility from "../../img/possibility.png";
 
 const FAQ = () =>{

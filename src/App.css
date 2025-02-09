@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ button{
     cursor: pointer;
 }
 html,body{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 body{
     width: 100vw;
@@ -34,3 +35,13 @@ body{
 ::-webkit-scrollbar {
 	display: none;
 } /*스크롤바 너비 때문에 화면이 넘침 */
+
+.black {
+    background-color: rgba(17, 17, 17, 1);
+  }
+  
+  /* 메인 오렌지색 화이트색 */
+  :root {
+    --orange: rgba(255, 119, 16, 1);
+    --white: rgba(197, 197, 197, 1);
+  }
