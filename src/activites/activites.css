@@ -1,5 +1,5 @@
 .activites_main {
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 
 #atv_curriculum-img {
@@ -15,6 +15,7 @@
 
 .activites_footer {
   border-top: 1px solid rgba(88, 88, 88, 1);
+  padding-bottom: 20px;
 }
 
 .atv_footer-btn {
@@ -23,7 +24,7 @@
   border-radius: 5px;
   color: white;
   font-size: 12px;
-  padding: 2px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,6 +67,7 @@
   width: 30%;
   display: flex;
   justify-content: flex-end;
+  padding-top: 16px;
 }
 
 .atv-section_column:first-child h1 {
@@ -78,6 +80,7 @@
   border-top: 1px solid rgba(255, 119, 16, 0.3);
   margin-left: 30px;
   width: 70%;
+  padding-top: 15px;
 }
 
 .atv-section_column:last-child h1 {
@@ -97,6 +100,7 @@
 .atv-section-innerbox p {
   color: var(--white);
   font-size: 11px;
+  line-height: 1.8;
 }
 
 .atv-section_colum_last {
@@ -130,6 +134,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .session-footer_btn {
@@ -149,22 +154,22 @@
 .session-footer_btn h2 {
   color: white;
   font-weight: 500;
-  font-size: 15px;
-  margin: 0;
+  font-size: 14px;
+  margin: 4px 0;
 }
 
 .session-footer_btn h4 {
   color: var(--orange);
-  font-weight: 500;
-  font-size: 15px;
-  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 4px 0;
 }
 
 .session-footer_btn p {
   color: var(--white);
   font-weight: 300;
   font-size: 10px;
-  margin: 3px;
+  margin: 4px 0;
 }
 
 /*project page*/
@@ -207,7 +212,7 @@
 .common_atvBox {
   width: 250px;
   padding: 0px;
-  padding-bottom: 17px;
+  padding-bottom: 13px;
   border: 2px solid rgba(88, 88, 88, 1);
   border-radius: 20px;
   margin-bottom: 20px;
@@ -235,7 +240,7 @@
   color: var(--orange);
   margin-right: 10px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .common_atv-part {
@@ -254,5 +259,5 @@
   color: var(--white);
   font-weight: 300;
   font-size: 12px;
-  margin: 6px 14px 0 14px;
+  margin: 12px 14px 0 14px;
 }
