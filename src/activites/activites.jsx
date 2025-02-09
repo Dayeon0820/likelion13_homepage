@@ -14,7 +14,7 @@ function Activites() {
     GALLERY: <ActivitesGallery />,
   };
 
-  const title = "ACTIVITES";
+  const title = "ACTIVITIES";
   const subtitle = "멋쟁이사자처럼 at 국민대의 커리큘럼과 활동들을 소개합니다";
   const buttons = [
     {
@@ -28,11 +28,11 @@ function Activites() {
     {
       title: "프로젝트 둘러보기",
       detail: "PROJECT",
-    },
+    } /*
     {
       title: "활동 갤러리",
       detail: "GALLERY",
-    },
+    },  */,
   ];
 
   return (

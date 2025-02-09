@@ -1,0 +1,104 @@
+#footer {
+  width: 100%;
+  display: flex;
+  height: 110px;
+  box-sizing: border-box;
+
+  background: #111;
+}
+
+.footerLogoBox {
+  width: 30%;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(88, 88, 88, 0.7);
+  border-top: 1px solid rgba(88, 88, 88, 0.7);
+}
+
+.snsLink {
+  display: flex;
+  align-items: center;
+}
+
+.footerLogo {
+  height: 12px;
+  margin: 15px;
+  margin-left: 5px;
+}
+
+.faceBookLink img {
+  height: 15px;
+  margin-right: 7px;
+}
+
+.instagramLink img {
+  height: 15px;
+}
+
+.kmuLogo {
+  height: 37px;
+  margin-left: 7px;
+}
+
+.footerLogoBox p {
+  color: var(--white);
+  font-size: 10px;
+  margin: 10px 0 10px 2px;
+}
+
+#footer_nav {
+  width: 70%;
+  border-bottom: 1px solid rgba(88, 88, 88, 0.7);
+  border-top: 1px solid rgba(88, 88, 88, 0.7);
+  margin-right: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Txt2025 {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 13px;
+}
+
+.footerList h5 {
+  color: rgba(197, 197, 197, 1);
+  font-size: 10px;
+  margin-top: 7px;
+  font-weight: 300;
+}
+
+.footerListLink {
+  margin-bottom: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footerListLink span {
+  color: rgba(197, 197, 197, 1);
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.footerList:last-child {
+  align-items: flex-start;
+}
+
+.footerListLink_last {
+  margin-bottom: 10px;
+}
