@@ -1,72 +1,5 @@
-#activites_body {
-  height: 110%;
-  overflow-y: auto;
-  padding-bottom: 20px;
-}
-
-.activites_header {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--white);
-}
-
-.atv_header-title {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--orange);
-  margin-bottom: 0;
-}
-
-.activites_header p {
-  font-size: 13px;
-  margin-top: 5px;
-  color: var(--white);
-}
-
-#atv_button-box {
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-}
-
 .activites_main {
   padding-bottom: 60px;
-  border-bottom: 1px solid var(--white);
-}
-
-.atv_main-title {
-  display: flex;
-  align-items: center;
-  margin-left: 80px;
-  margin-top: 10px;
-  height: 35px;
-}
-
-.atv_main-title h1 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-right: 15px;
-  color: white;
-}
-
-.atv_main-title h4 {
-  font-size: 13px;
-  font-family: 500;
-  color: var(--orange);
-}
-
-.atv_main-sub {
-  margin-left: 80px;
-  margin-top: 3px;
-  font-size: 11px;
-  color: var(--white);
 }
 
 #atv_curriculum-img {
@@ -77,7 +10,11 @@
 }
 
 #atv_curriculum-img img {
-  width: 70%;
+  width: 60%;
+}
+
+.activites_footer {
+  border-top: 1px solid rgba(88, 88, 88, 1);
 }
 
 .atv_footer-btn {
@@ -93,56 +30,229 @@
   margin-right: 17px;
 }
 
-.atv_footer-btn:last-child {
+.atv_footerBtn_default {
   background-color: rgba(88, 88, 88, 1);
 }
-
-/*버튼 컴포넌트 */
-#atv_button {
-  width: 180px;
-  height: 50px;
-
-  border-radius: 10px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin: 0 8px;
-}
-
-.atv_button-clicked {
+.atv_footerBtn_clicked {
   background-color: var(--orange);
-}
-
-.atv_button-default {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid var(--white);
-}
-
-#atv_button h2 {
-  font-size: 12px;
-  margin-bottom: 0;
-  color: white;
-  font-weight: 500;
-}
-
-#atv_button h4 {
-  font-size: 13px;
-  margin-top: 0;
-  font-weight: 600;
-}
-.atv_button-clicked h4 {
-  color: black;
-}
-
-.atv_button-default h4 {
-  color: var(--orange);
 }
 
 #atv_footer-btnBox {
   display: flex;
   margin-left: 80px;
   margin-top: 20px;
+}
+
+#atv-footer-imgBox {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#atv-footer-imgBox img {
+  height: 70px;
+  margin: 0 5px 2px 5px;
+}
+
+/*session 페이지 */
+
+.atv-section {
+  display: flex;
+  margin-top: 50px;
+}
+
+.atv-section_column:first-child {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.atv-section_column:first-child h1 {
+  color: var(--orange);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.atv-section_column:last-child {
+  border-top: 1px solid rgba(255, 119, 16, 0.3);
+  margin-left: 30px;
+  width: 70%;
+}
+
+.atv-section_column:last-child h1 {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.atv-section-innerbox {
+  margin: 30px 0 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.atv-section-innerbox p {
+  color: var(--white);
+  font-size: 11px;
+}
+
+.atv-section_colum_last {
+  border-bottom: 1px solid rgba(255, 119, 16, 0.3);
+  padding-bottom: 50px;
+}
+
+.atv-section-innerbox_left {
+  width: 30%;
+  margin: 0 20px;
+  justify-content: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.session_trackBox {
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-size: 9px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 2px 10px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+#session-footer {
+  margin-top: 20px;
+  border-top: 1px solid rgba(88, 88, 88, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.session-footer_btn {
+  border: 1px solid rgba(255, 119, 16, 0.3);
+  width: 180px;
+  height: 80px;
+  margin: 20px 7px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #1a1a1a;
+}
+
+.session-footer_btn h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+.session-footer_btn h4 {
+  color: var(--orange);
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+.session-footer_btn p {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 10px;
+  margin: 3px;
+}
+
+/*project page*/
+
+.atv_project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.atv_project-title h1 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 15px;
+  color: white;
+}
+#atv-project_header {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+#atv-project_main {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#atv-project-main_container {
+  width: 80%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+/* common components*/
+
+.common_atvBox {
+  width: 250px;
+  padding: 0px;
+  padding-bottom: 17px;
+  border: 2px solid rgba(88, 88, 88, 1);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.common_atv-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+.common_atv-img img {
+  width: 97%;
+}
+
+.common_atv-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  margin-top: 5px;
+  height: 20px;
+}
+.common_atv-name h2 {
+  color: var(--orange);
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.common_atv-part {
+  background-color: rgba(88, 88, 88, 1);
+  border-radius: 5px;
+  height: 20px;
+  padding: 0 7px;
+  font-size: 11px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.common_atv-subtitle {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 12px;
+  margin: 6px 14px 0 14px;
 }

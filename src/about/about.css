@@ -1,0 +1,142 @@
+#about_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-title {
+  color: var(--orange);
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 60px;
+}
+
+#about-introBox {
+  background-color: #1f1f1f;
+  width: 70%;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 9px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 700px;
+}
+#about-introBox h3 {
+  color: var(--orange);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#about-introBox p {
+  color: var(--white);
+  font-size: 14px;
+  text-align: center;
+}
+
+#about-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  font-size: 16px;
+  margin: 75px 0 50px 0;
+}
+
+#about-subtitle span {
+  color: var(--orange);
+}
+
+.about-contents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+}
+
+.about-contents h4 {
+  color: var(--orange);
+  margin-right: 20px;
+  font-size: 38px;
+}
+
+.about-contents span {
+  color: white;
+  font-size: 20px;
+}
+
+#about-footer {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*people page */
+#people_header {
+  padding-bottom: 60px;
+}
+
+#people_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#people-profile_container {
+  width: 60%;
+  max-width: 1200px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/*profile component */
+.ab_profile-box {
+  width: 180px;
+  padding: 4px;
+  padding-bottom: 17px;
+  border: 2px solid rgba(88, 88, 88, 1);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.ab_profile-img {
+  width: 180px;
+}
+
+.ab_profile-name {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-top: 5px;
+  height: 20px;
+}
+.ab_profile-name h2 {
+  color: var(--orange);
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ab_profile-part {
+  background-color: rgba(88, 88, 88, 1);
+  border-radius: 5px;
+  height: 20px;
+  padding: 0 7px;
+  font-size: 11px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab_profile-major {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 12px;
+  margin: 6px 14px 0 14px;
+}

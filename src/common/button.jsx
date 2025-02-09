@@ -1,5 +1,6 @@
 import "../App.css";
 import React, { useState } from "react";
+import "./common.css";
 
 function Button({ title, detail, activeButton, setActiveButton }) {
   return (
@@ -13,8 +14,12 @@ function Button({ title, detail, activeButton, setActiveButton }) {
         console.log(activeButton);
       }}
     >
-      <h2>{title}</h2>
-      <h4>{detail}</h4>
+      <div className="atv_btn-innerbox">
+        <h2>{title}</h2>
+      </div>
+      <div className="atv_btn-innerbox">
+        <h4>{detail}</h4>
+      </div>
     </div>
   );
 }
