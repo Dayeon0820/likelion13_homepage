@@ -58,6 +58,11 @@
     color: #FF7710;
     transition: color 0.3s ease;
 }
+.active{
+    color: #FF7710;
+    font-weight: bold;
+}
+
 .headerNavbar > .loginBox{
     background: #FF7710;
     border: none;

@@ -4,11 +4,11 @@ import "../main.css";
 
 const RecruitmentInfo = () => {
     const scheduleData = [
-        { label : "서류 지원", value: "2024.02.08(수) - 2024.02.26(일)"},
-        { label : "서류 합격일 발표", value: "2024.03.01(수)"},
-        { label : "면접", value: "2024.03.02(목) - 2024.03.07(화)"},
-        { label : "최종발표", value: "2024.03.08(수)"},
-        { label : "전체 OT", value: "2024.03.09(목) 18시"},
+        { label : "서류 지원", value: "2025.02.10(월) - 2025.02.23(일) 오후 6시"},
+        { label : "서류 합격일 발표", value: "2025.03.01(토)"},
+        { label : "면접", value: "2025.03.02(화) - 2025.03.07(금)"},
+        { label : "최종발표", value: "추후 공지 예정"},
+        { label : "전체 OT", value: "2025.03.14(금)"},
     ];
 
     return(
@@ -36,7 +36,7 @@ const RecruitmentInfo = () => {
                         }
                     </ul>
                     <div className="addInfo">
-                        <h4 className='activityPeriod scheduleTitle'>활동기간 <span>2024.03 - 2024.12</span></h4>
+                        <h4 className='activityPeriod scheduleTitle'>활동기간 <span>2025.03 - 2025.12</span></h4>
                         <h4 className="contact scheduleTitle">문의 <span>아래 링크 참조</span></h4>
                     </div>
                     <button className="joinBtn commonBtn">
