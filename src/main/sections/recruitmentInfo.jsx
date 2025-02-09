@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 import "../main.css";
 
 const RecruitmentInfo = () => {
@@ -10,54 +11,13 @@ const RecruitmentInfo = () => {
         { label : "전체 OT", value: "2024.03.09(목) 18시"},
     ];
 
-    const logoRef = useRef(null);
-    const containerRef = useRef(null);
-    const [isLogoVisible, setIsLogoVisible] = useState(false);
-    const [isContainerVisible, setIsContainerVisible] = useState(false);
-
-    useEffect(()=>{
-        const observerOptions = {
-            root : null,
-            rootMargin: "0px",
-            threshold: 0.3, //요소가 30% 보이면 애니메이션 실행
-        };
-
-        const logoObserver = new IntersectionObserver(([entry]) => {
-            console.log("Logo Entry:", entry); // 확인용 로그
-            if (entry.isIntersecting){
-                console.log("로고가 보임!");
-                setIsLogoVisible(true);
-            }
-        }, observerOptions);
-
-        const containerObserver = new IntersectionObserver(([entry]) => {
-            console.log("Container Entry:", entry); // 확인용 로그
-            if (entry.isIntersecting){
-                console.log("컨테이너가 보임!");
-                setIsContainerVisible(true);
-            }
-        }, observerOptions);
-
-        if (logoRef.current) logoObserver.observe(logoRef.current);
-        if (containerRef.current) containerObserver.observe(containerRef.current);
-
-        
-
-        return () =>{
-            if (logoRef.current) logoObserver.unobserve(logoRef.current)
-            if (containerRef.current) containerObserver.unobserve(containerRef.current)
-        };
-    },[]);
-    console.log("Logo Visible:", isLogoVisible);
-console.log("Container Visible:", isContainerVisible);
-
     return(
         <section id="recruitmentSection" className="mainSection scrollSection">
-            <div ref={logoRef} className={`mainLogoContainer ${isLogoVisible ? "fade-in" : ""}`}>
+            <div className="mainLogoContainer">
                  <h1>LIKELION UNIV. <span className='logoHighlight'>X</span> <span className='kmuTxt'>KMU</span></h1>
-                 <button className="aboutUsBtn commonBtn">ABOUT US↗</button>
+                 <button className="aboutUsBtn commonBtn"><Link>ABOUT US↗</Link></button>
             </div>
-            <div ref={containerRef} className={`recruitmentContainer ${isContainerVisible ? "fade-in" : ""}`}>
+            <div className="recruitmentContainer">
                 <div className="imgBox">
                 </div>
                 <div className="infoBox">
@@ -79,7 +39,11 @@ console.log("Container Visible:", isContainerVisible);
                         <h4 className='activityPeriod scheduleTitle'>활동기간 <span>2024.03 - 2024.12</span></h4>
                         <h4 className="contact scheduleTitle">문의 <span>아래 링크 참조</span></h4>
                     </div>
-                    <button className="joinBtn commonBtn">JOIN US↗</button>
+                    <button className="joinBtn commonBtn">
+                        <a href="https://forms.gle/mqwKMLhqsaSJCt6s7" target="_blank" rel="noopener noreferrer">
+                        JOIN US↗
+                        </a>
+                    </button>
                 </div>
             </div>
         </section>

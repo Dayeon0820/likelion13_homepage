@@ -11,17 +11,13 @@ import JoinUs from "./sections/joinUs";
 const MainPage=()=>{
 
     return(
-        <>
-            <Header></Header>
-            <main id="main" className='main'>
-                <RecruitmentInfo />
-                <WhoWeAre/>
-                <History/>
-                <FAQ/>
-                <JoinUs/>
-            </main>
-        </>
-       
+        <main id="main" className='main'>
+            <RecruitmentInfo />
+            <WhoWeAre/>
+            <History/>
+            <FAQ/>
+            <JoinUs/>
+        </main>
     );
 }
 

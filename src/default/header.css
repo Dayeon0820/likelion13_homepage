@@ -54,7 +54,7 @@
     cursor: pointer;
    /*  border: 1px solid #fff; */
 }
-.headerNavbar > ul > li:hover{
+.headerNavbar > ul > li > a:hover{
     color: #FF7710;
     transition: color 0.3s ease;
 }

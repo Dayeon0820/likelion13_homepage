@@ -84,7 +84,6 @@
     width: 130px;
     height: 32px;
     margin-left: 6%;
-    color: #FF7710;
     border: 1px solid #FF7710;
     border-radius: 8px;
     background: #000;
@@ -213,10 +212,16 @@
 .commonBtn{
     transition: transform 0.4s ease-in-out, background 0.4s, ;
 }
+.commonBtn > a {
+    color: #FF7710;
+}
+
 .commonBtn:hover{
     transform: scale(1.04);
     background: #FF7710;
     border: 1px solid #111;
+}
+.commonBtn > a:hover{
     color: #111;
 }
 

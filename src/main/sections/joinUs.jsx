@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import { Link } from "react-router-dom";
 import LikeLionKMULogo from "../../img/lion_logo.svg";
 import QualifiedPerson from "../../img/qualified_person.png";
 
@@ -36,7 +37,11 @@ const JoinUs = () => {
                     </div>
                     <div className="ctaBox">
                         <p className='font12'>이제 멋쟁이사자처럼 at 국민대에서 꿈을 펼쳐 볼 시간,</p>
-                        <button className="joinBtn commonBtn">JOIN US↗</button>
+                        <button className="joinBtn commonBtn">
+                            <a href="https://forms.gle/mqwKMLhqsaSJCt6s7" target="_blank" rel="noopener noreferrer">
+                            JOIN US↗
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>

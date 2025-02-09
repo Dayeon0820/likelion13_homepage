@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import "./header.css";
 import "./default.css";
-import smallLogo from "../img/LIKELION UNIV_full_brandlogo_small.svg";
+// import smallFullLogo from "../img/LIKELION UNIV_full_brandlogo_small.svg";
+// import smallLogo from "../img/LIKELION UNIV_brandlogo_small.png";
 
 const Header=()=>{
     
@@ -12,9 +14,9 @@ const Header=()=>{
             </h4>
             <nav className="headerNavbar">
                 <ul>
-                    <li>ABOUT US</li>
-                    <li>ACTIVITIES</li>
-                    <li>COMMUNITY</li>
+                    <li><Link to="/about">ABOUT US</Link></li>
+                    <li><Link to="/activities">ACTIVITIES</Link></li>
+                    <li><Link to="/community">COMMUNITY</Link></li>
                 </ul>
                 <button className="loginBox">LOGIN</button>
             </nav>
