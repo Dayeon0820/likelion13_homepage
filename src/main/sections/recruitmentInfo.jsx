@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import "../main.css";
 import "../css/recruitmentInfo.css";
+import LionLogo from "../../img/lion_logo.svg";
 
 
 const RecruitmentInfo = () => {
@@ -16,8 +17,8 @@ const RecruitmentInfo = () => {
     return(
         <section id="recruitmentSection" className="mainSection scrollSection">
             <div className="mainLogoContainer">
-                 <h1>LIKELION UNIV. <span className='logoHighlight'>X</span> <span className='kmuTxt'>KMU</span></h1>
-                 <button className="aboutUsBtn commonBtn"><Link>ABOUT US↗</Link></button>
+                <h1>LIKELION UNIV. <span className='logoHighlight xTxt'>X</span><span className='kmuTxt'>KMU</span></h1>
+                <button className="aboutUsBtn commonBtn"><Link>ABOUT US↗</Link></button>
             </div>
             <div className="recruitmentContainer">
                 <div className="imgBox">
