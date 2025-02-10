@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import "../css/history.css";
 import LikeLionKMULogo from "../../img/lion_logo.svg";
 import LikeLionKMU10 from "../../img/LIKELION_KMU_10st.png";
 import LikeLionKMU12 from "../../img/likelion_history_4호선톤 수상.jpg"

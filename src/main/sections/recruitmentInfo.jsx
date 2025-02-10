@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import "../main.css";
+import "../css/recruitmentInfo.css";
+
 
 const RecruitmentInfo = () => {
     const scheduleData = [

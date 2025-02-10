@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import "../css/FAQ.css";
 import Possibility from "../../img/possibility.png";
 
 const FAQ = () => {

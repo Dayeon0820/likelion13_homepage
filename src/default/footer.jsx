@@ -1,4 +1,4 @@
-import React, { useState } from "react-dom";
+import React from "react";
 import "./footer.css";
 import LikeLionKMULogo from "../img/lion_logo.svg";
 import { Link } from "react-router-dom";
@@ -8,58 +8,66 @@ const Footer = () => {
     {
       title: "ABOUT US",
       link: "/about",
-      subtitle: ["INFORMATION", "OURHISTORY", "WHAT WE ACHIEVE", "PROFILE"],
+      subtitle: ["INFORMATION", "PROFILE"],
     },
     {
-      title: "ACTIVITES",
+      title: "ACTIVITIES",
       link: "/activities",
-      subtitle: ["CURRICULUM", "SESSION", "PROJECT", "GALLERY"],
+      subtitle: ["CURRICULUM", "SESSION"],
     },
   ];
+
   return (
     <footer id="footer">
       <div className="footerLogoBox">
         <div className="snsLink">
           <img src="/textLogo.png" alt="" className="footerLogo" />
           <a href="#" className="faceBookLink">
-            <img src="/Facebook.png" />
+            <img src="/Facebook.png" alt="Facebook" />
           </a>
           <a href="#" className="instagramLink">
-            <img src="/instagram.png" />
+            <img src="/instagram.png" alt="Instagram" />
           </a>
         </div>
-        <img
-          src={LikeLionKMULogo}
-          alt="Like Lion KMU Logo"
-          className="kmuLogo"
-        ></img>
+        <img src={LikeLionKMULogo} alt="Like Lion KMU Logo" className="kmuLogo" />
         <p>@2025 likelion X KMU All rights reserved</p>
       </div>
+
       <nav id="footer_nav">
         <p className="Txt2025">2025</p>
-        {FooterNav.map((a) => (
-          <ul className="footerList" key={a.title}>
+        {FooterNav.map((item) => (
+          <ul className="footerList" key={item.title}>
             <li>
-              <Link className="footerListLink" to={a.link}>
-                {a.title}
+              <Link className="footerListLink" to={item.link}>
+                {item.title}
               </Link>
             </li>
-            {a.subtitle.map((i) => (
-              <li key={i}>
-                <h5>{i}</h5>
+            {item.subtitle.map((sub) => (
+              <li key={sub}>
+                <span>{sub}</span>
               </li>
             ))}
           </ul>
         ))}
+
         <ul className="footerList">
-          <Link className="footerListLink">COMMUNITY</Link>
+          <li>
+            <Link className="footerListLink">COMMUNITY</Link>
+          </li>
         </ul>
-        <ul className="footerList">
-          <Link className="footerListLink footerListLink_last" to="/">
-            FAQ <span> | 자주 묻는 질문</span>
-          </Link>
-          <Link className="footerListLink footerListLink_last">JOIN US</Link>
-          <Link className="footerListLink footerListLink_last">MYPAGE</Link>
+
+        <ul className="footerList footerListLast">
+          <li>
+            <Link className="footerListLink footerListLink_last" to="/">
+              FAQ <span> | 자주 묻는 질문</span>
+            </Link>
+          </li>
+          <li>
+            <Link className="footerListLink footerListLink_last">JOIN US</Link>
+          </li>
+          <li>
+            <Link className="footerListLink footerListLink_last">MYPAGE</Link>
+          </li>
         </ul>
       </nav>
     </footer>
@@ -67,3 +75,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import "../css/whoWeAre.css";
 
 const WhoWeAre =()=>{
     const introBoxRef = useRef(null);

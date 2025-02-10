@@ -1,0 +1,64 @@
+/* ===== whoWeAreSection =======*/
+#WWASection{
+    width: 100%;
+    height: 70vh;
+    background: #111;
+    /* border: 1px solid #fff; */
+    padding: 5vh 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+.WWATxt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    gap: 5px;
+    color: #fff;
+    /* border: 1px solid #fff; */
+}
+.WWATxt > span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* .WWAContent{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+} */
+
+.WWAIntroductionBox{
+    background: #1F1F1F;
+    color: #fff;
+    width: 53%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+    /* border: 1px solid #fff; */
+    /* 스크롤 맞춰서 애니메이션션 */
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.WWA-fade-in-left{
+    opacity: 1;
+    transform: translateY(0);
+}
+.WWAIntroductionBox > h4{
+    font-weight: 500;
+}
+.WWAIntroductionBox > p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.4;
+}

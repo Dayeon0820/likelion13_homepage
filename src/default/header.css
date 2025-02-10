@@ -29,7 +29,7 @@
     background-size: contain;
     /* border: 1px solid #fff; */
 }
-.logoTitle > span{
+.logoTitle > a > span{
     margin: 0 2px;
 }
 .logoHighlight{
