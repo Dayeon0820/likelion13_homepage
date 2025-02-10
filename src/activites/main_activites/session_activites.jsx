@@ -2,6 +2,7 @@ import "../../App.css";
 import "../activites.css";
 import React, { useState } from "react";
 import Subtitle from "../../common/subtitle";
+import Footer from "../../default/footer";
 
 function ActivitesSession() {
   const trackArray = ["Django", "UI/UX", "GRAPHIC", "DESIGN PROCESS"];
@@ -11,7 +12,7 @@ function ActivitesSession() {
           나뉘어 진행됩니다`;
   return (
     <div>
-      <main className="activites_main">
+      <div className="activites_main">
         <Subtitle title={title} subtitle={subtitle} P={p} />
         <section className="atv-section">
           <div className="atv-section_column">
@@ -57,8 +58,8 @@ function ActivitesSession() {
             </div>
           </div>
         </section>
-      </main>
-      <footer id="session-footer">
+      </div>
+      <div id="session-footer">
         <div className="session-footer_btn">
           <h2>주 2회 세션 진행</h2>
           <h4>월/목</h4>
@@ -75,7 +76,8 @@ function ActivitesSession() {
           <h2>강의실 대여 예정</h2>
           <h4>공학관, 복지관</h4>
         </div>
-      </footer>
+      </div>
+      <Footer />
     </div>
   );
 }

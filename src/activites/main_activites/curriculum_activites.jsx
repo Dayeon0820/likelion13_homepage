@@ -2,6 +2,7 @@ import "../../App.css";
 import "../activites.css";
 import React, { useState } from "react";
 import Subtitle from "../../common/subtitle";
+import Footer from "../../default/footer";
 
 function ActivitesCurriculum() {
   const [activeButton, setActiveButton] = useState("development");
@@ -11,14 +12,14 @@ function ActivitesCurriculum() {
           나뉘어 진행합니다`;
   return (
     <div>
-      <main className="activites_main">
+      <div className="activites_main">
         <Subtitle title={title} subtitle={subtitle} P={p} />
 
         <div id="atv_curriculum-img">
           <img id="atv_curriculum-img" src="./curriculum.png" />
         </div>
-      </main>
-      <footer className="activites_footer">
+      </div>
+      <div className="activites_footer">
         <div id="atv_footer-btnBox">
           <div
             className={`atv_footer-btn ${
@@ -56,7 +57,8 @@ function ActivitesCurriculum() {
             <img src="figma.png" />
           )}
         </div>
-      </footer>
+      </div>
+      <Footer />
     </div>
   );
 }

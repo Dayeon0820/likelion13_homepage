@@ -7,10 +7,10 @@
 
 #about-title {
   color: var(--orange);
-  font-size: 17px;
-  font-weight: 400;
-  margin-top: 70px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 #about-introBox {
@@ -18,7 +18,7 @@
   width: 70%;
   border-radius: 20px;
   margin-top: 20px;
-  height: 130px;
+  height: 100px;
   padding: 0 30px;
   display: flex;
   flex-direction: column;
@@ -30,12 +30,13 @@
 #about-introBox h3 {
   color: var(--orange);
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-size: 15px;
 }
 
 #about-introBox p {
   color: var(--white);
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   line-height: 1.5;
 }
@@ -43,8 +44,8 @@
 #about-subtitle {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
-  font-size: 16px;
-  margin: 75px 0 50px 0;
+  font-size: 14px;
+  margin: 45px 0 30px 0;
 }
 
 #about-subtitle span {
@@ -56,18 +57,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 55px;
+  height: 40px;
 }
 
 .about-contents h4 {
   color: var(--orange);
   margin-right: 20px;
-  font-size: 38px;
+  font-size: 27px;
 }
 
 .about-contents span {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #about-footer {
@@ -79,7 +80,7 @@
 
 /*people page */
 #people_header {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 #people_main {

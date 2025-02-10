@@ -10,8 +10,8 @@ function Page({ title, subtitle, buttons, subComponent }) {
   );
 
   return (
-    <div id="page_body" className="black">
-      <header className="page_header">
+    <main id="page_body" className="black">
+      <div className="page_header">
         <h1 className="page_header-title">{title}</h1>
         <p>{subtitle}</p>
         <div id="page_button-box">
@@ -24,9 +24,9 @@ function Page({ title, subtitle, buttons, subComponent }) {
             />
           ))}
         </div>
-      </header>
+      </div>
       {subComponent[activeButton]}
-    </div>
+    </main>
   );
 }
 

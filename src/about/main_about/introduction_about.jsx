@@ -1,6 +1,7 @@
 import "../../App.css";
 import "../about.css";
 import React, { useState } from "react";
+import Footer from "../../default/footer";
 
 function IntroductionAbout() {
   const contents = [
@@ -10,12 +11,12 @@ function IntroductionAbout() {
   ];
   return (
     <div>
-      <main id="about_main">
+      <div id="about_main">
         <h2 id="about-title">멋쟁이사자처럼 at 국민대는 어떤 동아리인가요?</h2>
         <div id="about-introBox">
           <h3>INTRODUCTION</h3>
           <p>
-            멋쟁이 사자처럼 at 국민대하교는 온라인 강의와 오프라인 활동을 통한
+            멋쟁이 사자처럼 at 국민대학교는 온라인 강의와 오프라인 활동을 통한
             체계적인 프로그래밍 교육 동아리이며, 자신만의 서비스를 만들고 싶은
             국민대 학생이라면 누구나 지원 가능합니다.
           </p>
@@ -33,8 +34,8 @@ function IntroductionAbout() {
         <h4 id="about-subtitle">
           전국 <span>최대 규모</span> 개발/창업 동아리입니다.
         </h4>
-      </main>
-      <footer id="about-footer">
+      </div>
+      <section id="about-footer">
         <div className="session-footer_btn">
           <h2>VOD 강의 제공</h2>
           <h4>온/오프라인 학습</h4>
@@ -51,7 +52,8 @@ function IntroductionAbout() {
           <h4>멋사의 꽃</h4>
           <h2>해커톤</h2>
         </div>
-      </footer>
+      </section>
+      <Footer />
     </div>
   );
 }

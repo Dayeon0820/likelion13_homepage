@@ -10,7 +10,7 @@
 }
 
 #atv_curriculum-img img {
-  width: 60%;
+  width: 50%;
 }
 
 .activites_footer {
@@ -141,7 +141,7 @@
   border: 1px solid rgba(255, 119, 16, 0.3);
   width: 180px;
   height: 80px;
-  margin: 20px 7px;
+  margin: 20px 7px 30px 7px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
