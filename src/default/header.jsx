@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import {  NavLink, Link  } from "react-router-dom";
 import "./header.css";
 import "./default.css";
 // import smallFullLogo from "../img/LIKELION UNIV_full_brandlogo_small.svg";
@@ -10,13 +10,15 @@ const Header=()=>{
     return(
         <header className='header'>
             <h4 className="logoTitle">
-                LIKELION UNIV. <span className='logoHighlight'>X</span> KMU
+                <Link to="/" className="logoLink">
+                    LIKELION UNIV. <span className="logoHighlight">X</span> KMU
+                </Link>
             </h4>
             <nav className="headerNavbar">
                 <ul>
-                    <li><Link to="/about">ABOUT US</Link></li>
-                    <li><Link to="/activities">ACTIVITIES</Link></li>
-                    <li><Link to="/community">COMMUNITY</Link></li>
+                    <li><NavLink  to="/about" className={({ isActive }) => isActive ? "active" : ""}>ABOUT US</NavLink></li>
+                    <li><NavLink to="/activities" className={({ isActive }) => isActive ? "active" : ""}>ACTIVITIES</NavLink></li>
+                    <li><NavLink to="/community" className={({ isActive }) => isActive ? "active" : ""}>COMMUNITY</NavLink></li>
                 </ul>
                 <button className="loginBox">LOGIN</button>
             </nav>

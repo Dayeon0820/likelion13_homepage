@@ -7,6 +7,7 @@ import WhoWeAre from "./sections/whoWeAre";
 import History from "./sections/history";
 import FAQ from "./sections/FAQ";
 import JoinUs from "./sections/joinUs";
+import Footer from "../default/footer";
 
 const MainPage=()=>{
 
@@ -17,6 +18,9 @@ const MainPage=()=>{
             <History/>
             <FAQ/>
             <JoinUs/>
+            <div className="footer-container scrollSection">
+                <Footer />
+            </div>
         </main>
     );
 }

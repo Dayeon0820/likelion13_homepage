@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
+import "../css/history.css";
 import LikeLionKMULogo from "../../img/lion_logo.svg";
 import LikeLionKMU10 from "../../img/LIKELION_KMU_10st.png";
+import LikeLionKMU12 from "../../img/likelion_history_4호선톤 수상.jpg"
 
 
 const History = () => {
@@ -12,6 +14,7 @@ const History = () => {
   const programData = [
     { year: 2018, group: `${group} 5기 start`, content: "", img: "" },
     { year: 2022, group: `${group} 10기`, content: "Sellon 팀 중앙해커톤 동상 수상 (73팀 중 4위)", img: LikeLionKMU10 },
+    { year: 2024, group: `${group} 12기`, content: "오이지 팀(송지민) 연합해커톤 4호선톤 최우수상 수상", img: LikeLionKMU12 },
     { year: 2025, group: `${group} 13기 모집`, content: "", img: "" },
   ];
 
