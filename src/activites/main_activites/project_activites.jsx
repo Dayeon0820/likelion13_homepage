@@ -6,8 +6,8 @@ import CommonActivites from "./common_activites";
 function ActivitesProject() {
   const [activeButton, setActiveButton] = useState("11");
   return (
-    <div>
-      <header id="atv-project_header">
+    <div id="page_container">
+      <div id="atv-project_header">
         <div
           className={`atv_footer-btn ${
             activeButton === "11"
@@ -31,7 +31,7 @@ function ActivitesProject() {
         >
           12기
         </div>
-      </header>
+      </div>
       <main id="atv-project_main">
         <div id="atv-project-main_container">
           <CommonActivites />

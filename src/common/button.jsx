@@ -4,7 +4,7 @@ import "./common.css";
 
 function Button({ title, detail, activeButton, setActiveButton }) {
   return (
-    <div
+    <button
       id="atv_button"
       className={
         activeButton === detail ? "atv_button-clicked" : "atv_button-default"
@@ -20,7 +20,7 @@ function Button({ title, detail, activeButton, setActiveButton }) {
       <div className="atv_btn-innerbox">
         <h4>{detail}</h4>
       </div>
-    </div>
+    </button>
   );
 }
 

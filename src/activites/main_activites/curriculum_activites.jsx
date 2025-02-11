@@ -10,15 +10,15 @@ function ActivitesCurriculum() {
   const p = `멋쟁이사자처럼 국민대학교 13기 세션은 디자인 트랙과 개발 트랙 2가지로
           나뉘어 진행합니다`;
   return (
-    <div>
-      <main className="activites_main">
+    <div id="page_container">
+      <section id="curriculum_main" className="activites_main">
         <Subtitle title={title} subtitle={subtitle} P={p} />
 
-        <div id="atv_curriculum-img">
+        <div id="atv_curriculum-img_box">
           <img id="atv_curriculum-img" src="./curriculum.png" />
         </div>
-      </main>
-      <footer className="activites_footer">
+      </section>
+      <section id="curriculum_footer" className="activites_footer active-common-footer">
         <div id="atv_footer-btnBox">
           <div
             className={`atv_footer-btn ${
@@ -46,17 +46,19 @@ function ActivitesCurriculum() {
         </div>
         <div id="atv-footer-imgBox">
           {activeButton === "development" ? (
-            <div>
-              <img src="/html.png" />
-              <img src="/git.png" />
-              <img src="/django.png" />
-              <img src="/aws.png" />
-            </div>
+          <div className="img-grid">
+            <img src="/html.png" alt="HTML" />
+            <img src="/git.png" alt="Git" />
+            <img src="/django.png" alt="Django" />
+            <img src="/aws.png" alt="AWS" />
+          </div>
           ) : (
-            <img src="figma.png" />
+          <div className="img-grid single">
+            <img src="/figma.png" alt="Figma" />
+          </div>
           )}
         </div>
-      </footer>
+      </section>
     </div>
   );
 }

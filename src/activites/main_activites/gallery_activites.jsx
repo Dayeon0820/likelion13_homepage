@@ -6,7 +6,7 @@ import CommonActivites from "./common_activites";
 function ActivitesGallery() {
   const [activeButton, setActiveButton] = useState("11");
   return (
-    <div>
+    <div id="page_container">
       <header id="atv-project_header">
         <div
           className={`atv_footer-btn ${
