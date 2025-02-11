@@ -1,6 +1,7 @@
 import "../../App.css";
 import "../about.css";
 import React, { useState } from "react";
+import Footer from "../../default/footer";
 
 function IntroductionAbout() {
   const contents = [

@@ -36,12 +36,14 @@ function About() {
   ];
 
   return (
-    <Page
-      title={title}
-      subtitle={subtitle}
-      subComponent={mainComponent}
-      buttons={buttons}
-    />
+    <>
+      <Page
+        title={title}
+        subtitle={subtitle}
+        subComponent={mainComponent}
+        buttons={buttons}
+      />
+    </>
   );
 }
 

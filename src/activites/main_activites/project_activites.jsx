@@ -2,6 +2,7 @@ import "../../App.css";
 import "../activites.css";
 import React, { useState } from "react";
 import CommonActivites from "./common_activites";
+import Footer from "../../default/footer";
 
 function ActivitesProject() {
   const [activeButton, setActiveButton] = useState("11");
@@ -32,7 +33,7 @@ function ActivitesProject() {
           12기
         </div>
       </div>
-      <main id="atv-project_main">
+      <section id="atv-project_main">
         <div id="atv-project-main_container">
           <CommonActivites />
           <CommonActivites />
@@ -41,7 +42,8 @@ function ActivitesProject() {
           <CommonActivites />
           <CommonActivites />
         </div>
-      </main>
+      </section>
+      <Footer />
     </div>
   );
 }

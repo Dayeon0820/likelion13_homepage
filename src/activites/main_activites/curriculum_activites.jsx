@@ -2,6 +2,7 @@ import "../../App.css";
 import "../activites.css";
 import React, { useState } from "react";
 import Subtitle from "../../common/subtitle";
+import Footer from "../../default/footer";
 
 function ActivitesCurriculum() {
   const [activeButton, setActiveButton] = useState("development");

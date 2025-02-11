@@ -2,9 +2,11 @@ import "../../App.css";
 import "../activites.css";
 import React from "react";
 import Subtitle from "../../common/subtitle";
+import Footer from "../../default/footer";
 
 function ActivitesSession() {
-  const trackArray = ["Django", "UI/UX", "GRAPHIC", "DESIGN PROCESS"];
+  const trackArray = ["html, css, JS", "Django", "React", "git", "aws"];
+  const designArray = ["html, css", "UI/UX", "GRAPHIC", "DESIGN PROCESS"];
   const title = "SESSION";
   const subtitle = "멋쟁이사자처럼 at 국민대 12기 세션 안내";
   const description = `멋쟁이사자처럼 국민대학교 12기 세션은 디자인 트랙과 개발 트랙 2가지로 나뉘어 진행됩니다`;

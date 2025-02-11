@@ -18,7 +18,7 @@ const RecruitmentInfo = () => {
         <section id="recruitmentSection" className="mainSection scrollSection">
             <div className="mainLogoContainer">
                 <h1>LIKELION UNIV. <span className='logoHighlight xTxt'>X</span><span className='kmuTxt'>KMU</span></h1>
-                <button className="aboutUsBtn commonBtn"><Link>ABOUT US↗</Link></button>
+                <button className="aboutUsBtn commonBtn"><Link to="/about">ABOUT US↗</Link></button>
             </div>
             <div className="recruitmentContainer">
                 <div className="imgBox">

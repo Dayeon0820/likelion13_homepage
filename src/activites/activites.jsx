@@ -5,6 +5,7 @@ import ActivitesProject from "./main_activites/project_activites";
 import ActivitesGallery from "./main_activites/gallery_activites";
 import React, { useState } from "react";
 import Page from "../common/page";
+import Footer from "../default/footer";
 
 function Activites() {
   const mainComponent = {
@@ -24,24 +25,26 @@ function Activites() {
     {
       title: "12기 세션안내",
       detail: "SESSION",
-    },
+    } /*
     {
       title: "프로젝트 둘러보기",
       detail: "PROJECT",
-    } /*
+    }, */,
     {
       title: "활동 갤러리",
       detail: "GALLERY",
-    },  */,
+    },
   ];
 
   return (
-    <Page
-      title={title}
-      subtitle={subtitle}
-      subComponent={mainComponent}
-      buttons={buttons}
-    />
+    <>
+      <Page
+        title={title}
+        subtitle={subtitle}
+        subComponent={mainComponent}
+        buttons={buttons}
+      />
+    </>
   );
 }
 
