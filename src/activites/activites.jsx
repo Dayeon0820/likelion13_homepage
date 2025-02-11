@@ -25,15 +25,15 @@ function Activites() {
     {
       title: "12기 세션안내",
       detail: "SESSION",
-    },
+    } /*
     {
       title: "프로젝트 둘러보기",
       detail: "PROJECT",
-    } /*
+    }, */,
     {
       title: "활동 갤러리",
       detail: "GALLERY",
-    },  */,
+    },
   ];
 
   return (

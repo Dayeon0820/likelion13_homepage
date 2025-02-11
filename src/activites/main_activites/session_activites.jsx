@@ -5,7 +5,8 @@ import Subtitle from "../../common/subtitle";
 import Footer from "../../default/footer";
 
 function ActivitesSession() {
-  const trackArray = ["Django", "UI/UX", "GRAPHIC", "DESIGN PROCESS"];
+  const trackArray = ["html, css, JS", "Django", "React", "git", "aws"];
+  const designArray = ["html, css", "UI/UX", "GRAPHIC", "DESIGN PROCESS"];
   const title = "SESSION";
   const subtitle = "멋쟁이사자처럼 at 국민대 12기 세션 안내";
   const p = `멋쟁이사자처럼 국민대학교 12기 세션은 디자인 트렉과 개발 트렉 2가지로
@@ -22,9 +23,10 @@ function ActivitesSession() {
             <h1>FRONTEND | BACKEND TRACK</h1>
             <div className="atv-section-innerbox">
               <p>
-                디자인 프로세스를 경험하고 서비스 기획에 필요한 디자인 스킬을
-                학습합니다. 개발자와의 원활한 의사소통을 위해 협엽룰을 익히고
-                서비스의 쿨리티를 높일 수 있는 심화된 디자인 세션을 진행합니다.
+                프론트엔드 트랙과 백엔드 트랙을 운영하며, 각 분야에 필요한 핵심
+                역량을 체계적으로 학습합니다. 트랙별 세션은 분리되어 진행되지만,
+                모든 회원은 자유롭게 다른 파트의 수업을 들을 수 있으며, 원활한
+                학습을 위해 주 2회 출석이 필수입니다.
               </p>
               <div className="atv-section-innerbox_left">
                 {trackArray.map((a, index) => (
@@ -46,10 +48,10 @@ function ActivitesSession() {
               <p>
                 디자인 프로세스를 경험하고 서비스 기획에 필요한 디자인 스킬을
                 학습합니다. 개발자와의 원활한 의사소통을 위해 협엽룰을 익히고
-                서비스의 쿨리티를 높일 수 있는 심화된 디자인 세션을 진행합니다.
+                서비스의 퀄리티를 높일 수 있는 심화된 디자인 세션을 진행합니다.
               </p>
               <div className="atv-section-innerbox_left">
-                {trackArray.map((a, index) => (
+                {designArray.map((a, index) => (
                   <div className="session_trackBox" key={index}>
                     {a}
                   </div>
