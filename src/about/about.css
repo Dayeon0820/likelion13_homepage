@@ -100,7 +100,7 @@
 
 /*profile component */
 .ab_profile-box {
-  width: 180px;
+  width: 190px;
   padding: 4px;
   padding-bottom: 17px;
   border: 2px solid rgba(88, 88, 88, 1);
@@ -110,6 +110,8 @@
 
 .ab_profile-img {
   width: 100%;
+  height: 180px;
+  border-radius: 20px;
 }
 
 .ab_profile-name {
@@ -121,7 +123,7 @@
 }
 .ab_profile-name h2 {
   color: var(--orange);
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -141,6 +143,6 @@
 .ab_profile-major {
   color: var(--white);
   font-weight: 300;
-  font-size: 12px;
+  font-size: 11px;
   margin: 6px 14px 0 14px;
 }

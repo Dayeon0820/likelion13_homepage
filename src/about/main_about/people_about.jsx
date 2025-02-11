@@ -3,6 +3,7 @@ import "../about.css";
 import React, { useState } from "react";
 import Subtitle from "../../common/subtitle";
 import Footer from "../../default/footer";
+import members from "../../data/member";
 
 function PeopleAbout() {
   const title = "PEOPLE";
@@ -15,13 +16,14 @@ function PeopleAbout() {
       </div>
       <section id="people_main">
         <div id="people-profile_container">
-          <ProfileAbout />
-          <ProfileAbout />
-          <ProfileAbout />
-          <ProfileAbout />
-          <ProfileAbout />
-          <ProfileAbout />
-          <ProfileAbout />
+          {members.map((member) => (
+            <ProfileAbout
+              name={member.name}
+              part={member.part}
+              major={member.major}
+              key={member.name}
+            />
+          ))}
         </div>
       </section>
       <Footer />
@@ -29,17 +31,21 @@ function PeopleAbout() {
   );
 }
 
-function ProfileAbout() {
+function ProfileAbout({ name, part, major }) {
   return (
     <>
       <div className="ab_profile-box">
-        <img src="/profile.png" className="ab_profile-img" />
+        <img
+          src={`/memberImg/${name}.jpg`}
+          className="ab_profile-img"
+          onError={(e) => (e.target.src = "/profile.png")}
+        />
 
         <div className="ab_profile-name">
-          <h2>이다연</h2>
-          <div className="ab_profile-part">디자인</div>
+          <h2>{name}</h2>
+          <div className="ab_profile-part">{part}</div>
         </div>
-        <h4 className="ab_profile-major">미디어전공 22학번</h4>
+        <h4 className="ab_profile-major">{major}</h4>
       </div>
     </>
   );
