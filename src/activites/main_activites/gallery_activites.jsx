@@ -6,7 +6,7 @@ import Footer from "../../default/footer";
 import { Gallery11, Gallery12 } from "../../data/gallery";
 
 function ActivitesGallery() {
-  const [activeButton, setActiveButton] = useState("11");
+  const [activeButton, setActiveButton] = useState("12");
   return (
     <div>
       <div id="atv-project_header">
