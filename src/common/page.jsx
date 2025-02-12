@@ -33,7 +33,7 @@ function Page({ title, subtitle, buttons, subComponent }) {
         </div>
         {subComponent[activeButton]}
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

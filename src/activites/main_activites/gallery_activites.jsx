@@ -51,7 +51,6 @@ function ActivitesGallery() {
           )}
         </div>
       </section>
-      <Footer />
     </div>
   );
 }
