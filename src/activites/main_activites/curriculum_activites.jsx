@@ -17,7 +17,10 @@ function ActivitesCurriculum() {
         <section id="atv_curriculum-img_box">
           <img id="atv_curriculum-img" src="./curriculum.png" />
         </section>
-        <section id="curriculum_footer"     className="activites_footer active-common-footer">
+        <section
+          id="curriculum_footer"
+          className="activites_footer active-common-footer"
+        >
           <div id="atv_footer-btnBox">
             <div
               className={`atv_footer-btn ${
@@ -52,9 +55,10 @@ function ActivitesCurriculum() {
                 <img src="/aws.png" alt="AWS" />
               </div>
             ) : (
-            <div className="img-grid single">
-              <img src="/figma.png" alt="Figma" />
-            </div>
+              <div className="img-grid single">
+                <img src="/figma.png" alt="Figma" />
+                <img src="/adobe.png" alt="Adobe" />
+              </div>
             )}
           </div>
         </section>
