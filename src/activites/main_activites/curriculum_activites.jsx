@@ -56,8 +56,7 @@ function ActivitesCurriculum() {
               </div>
             ) : (
               <div className="img-grid single">
-                <img src="/figma.png" alt="Figma" />
-                <img src="/adobe.png" alt="Adobe" />
+                <img src="/figmaAdobe.png" alt="Figma" />
               </div>
             )}
           </div>
