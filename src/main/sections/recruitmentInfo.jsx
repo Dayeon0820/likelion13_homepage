@@ -17,9 +17,20 @@ const RecruitmentInfo = () => {
     return(
         <section id="recruitmentSection" className="mainSection scrollSection">
             <div className="mainLogoContainer">
+                <h1>LIKELION UNIV. </h1>
+                <div className='mainLogoKMUWrapper'>
+                    <div className='mainLogoKMUBox'>
+                        <h2 className='logoHighlight xTxt'>X</h2>
+                        <span className='lionLogoSpan'></span>
+                        <h2 className='kmuTxt'>KMU</h2>
+                    </div>
+                    <button className="aboutUsBtn commonBtn"><Link to="/about">ABOUT US↗</Link></button>
+                </div>
+            </div>
+            {/* <div className="mainLogoContainer">
                 <h1>LIKELION UNIV. <span className='logoHighlight xTxt'>X</span><span className='kmuTxt'>KMU</span></h1>
                 <button className="aboutUsBtn commonBtn"><Link to="/about">ABOUT US↗</Link></button>
-            </div>
+            </div> */}
             <div className="recruitmentContainer">
                 <div className="imgBox">
                 </div>
@@ -40,7 +51,7 @@ const RecruitmentInfo = () => {
                     </ul>
                     <div className="addInfo">
                         <h4 className='activityPeriod scheduleTitle'>활동기간 <span>2025.03 - 2025.12</span></h4>
-                        <h4 className="contact scheduleTitle">문의 <span>아래 링크 참조</span></h4>
+                        <h4 className="contact scheduleTitle">문의 <span>인스타 DM 문의 @likelion_kmu</span></h4>
                     </div>
                     <button className="joinBtn commonBtn">
                         <a href="https://forms.gle/mqwKMLhqsaSJCt6s7" target="_blank" rel="noopener noreferrer">

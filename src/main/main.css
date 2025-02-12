@@ -34,6 +34,9 @@
     align-self: flex-end;
 }
 .commonBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.4s ease-in-out, background 0.4s, ;
 }
 .commonBtn > a {
