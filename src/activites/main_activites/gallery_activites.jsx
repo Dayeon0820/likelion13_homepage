@@ -8,7 +8,7 @@ import { Gallery11, Gallery12 } from "../../data/gallery";
 function ActivitesGallery() {
   const [activeButton, setActiveButton] = useState("12");
   return (
-    <div>
+    <div id="page_container">
       <div id="atv-project_header">
         <div
           className={`atv_footer-btn ${

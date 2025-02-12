@@ -12,54 +12,53 @@ function ActivitesCurriculum() {
           나뉘어 진행합니다`;
   return (
     <div id="page_container">
-      <section id="curriculum_main" className="activites_main">
-        <Subtitle title={title} subtitle={subtitle} P={p} />
-
-        <div id="atv_curriculum-img_box">
+      <Subtitle title={title} subtitle={subtitle} P={p} />
+      <div id="curriculum_main" className="activites_main common_main">
+        <section id="atv_curriculum-img_box">
           <img id="atv_curriculum-img" src="./curriculum.png" />
-        </div>
-      </section>
-      <section id="curriculum_footer" className="activites_footer active-common-footer">
-        <div id="atv_footer-btnBox">
-          <div
-            className={`atv_footer-btn ${
-              activeButton === "development"
-                ? "atv_footerBtn_clicked"
-                : "atv_footerBtn_default"
-            }`}
-            onClick={() => {
-              setActiveButton("development");
-              console.log(activeButton);
-            }}
-          >
-            개발
+        </section>
+        <section id="curriculum_footer"     className="activites_footer active-common-footer">
+          <div id="atv_footer-btnBox">
+            <div
+              className={`atv_footer-btn ${
+                activeButton === "development"
+                  ? "atv_footerBtn_clicked"
+                  : "atv_footerBtn_default"
+              }`}
+              onClick={() => {
+                setActiveButton("development");
+                console.log(activeButton);
+              }}
+            >
+              개발
+            </div>
+            <div
+              className={`atv_footer-btn ${
+                activeButton === "design"
+                  ? "atv_footerBtn_clicked"
+                  : "atv_footerBtn_default"
+              }`}
+              onClick={() => setActiveButton("design")}
+            >
+              디자인
+            </div>
           </div>
-          <div
-            className={`atv_footer-btn ${
-              activeButton === "design"
-                ? "atv_footerBtn_clicked"
-                : "atv_footerBtn_default"
-            }`}
-            onClick={() => setActiveButton("design")}
-          >
-            디자인
+          <div id="atv-footer-imgBox">
+            {activeButton === "development" ? (
+              <div className="gridBox">
+                <img src="/html.png" alt="HTML" />
+                <img src="/git.png" alt="Git" />
+                <img src="/django.png" alt="Django" />
+                <img src="/aws.png" alt="AWS" />
+              </div>
+            ) : (
+            <div className="img-grid single">
+              <img src="/figma.png" alt="Figma" />
+            </div>
+            )}
           </div>
-        </div>
-        <div id="atv-footer-imgBox">
-          {activeButton === "development" ? (
-          <div className="img-grid">
-            <img src="/html.png" alt="HTML" />
-            <img src="/git.png" alt="Git" />
-            <img src="/django.png" alt="Django" />
-            <img src="/aws.png" alt="AWS" />
-          </div>
-          ) : (
-          <div className="img-grid single">
-            <img src="/figma.png" alt="Figma" />
-          </div>
-          )}
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

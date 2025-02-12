@@ -101,7 +101,7 @@
 
 @keyframes pulseScale {
     0% { transform: scale(1.04); }
-    50% { transform: scale(1.1); }
+    50% { transform: scale(1.11); }
     100% { transform: scale(1.04); }
   }
   
@@ -110,6 +110,7 @@
     align-self: center;
   }
   .joinBtn-lastPage:hover{
-    transform: scale(1.1);
+    transform: scale(1.11);
     animation: none;
+    font-weight: bold;
   }

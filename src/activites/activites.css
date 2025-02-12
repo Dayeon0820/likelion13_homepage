@@ -1,63 +1,57 @@
-#page_container{
-  height: 77%; /* page-header : 23% height */
-/*   background: #333; */
-  padding: 0 20px;
-}
-
 .activites_main {
-  height: 80%;
+  height: 85%; /* sub_title 높이 15% */
   /* border: 1px solid #fff; */
- /*  background: #444; */
+  /* background: #444; */
 }
 
 .active-common-footer{
-  
   border-top: 1px solid #434343;
 }
 
+
 /* 커리큘럼 페이지 */
 #curriculum_main{
-  height: 70%;
   /* border: 1px solid #fff; */
+  padding: 4% 6%;
+  width: 100%;
 }
 
 #atv_curriculum-img_box{
-  width: 100%;
-  height: 82%; /* sub_title 18% */
+  width: 90%;
+  height: 300px; 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
- /*  background: #333; */
+  align-items: center;
+  /* background: #333; */
+  margin: 10px auto 20px;
 }
 
 #atv_curriculum-img_box img {
   /* border: 1px solid #fff; */
-  margin-top: 30px;
-  height: 80%;
-  background-size: contain;
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
 }
 
 
 #curriculum_footer{
-  height: 30%;
-  padding: 10px 3%;
- /*  background: #333; */
+  height: 180px;
+  padding: 12px 3%;
   display: flex;
   flex-direction: column;
-
+/*   border: 1px solid #fff; */
 }
 #atv_footer-btnBox {
   display: flex;
-  /* margin-left: 80px;
-  margin-top: 20px; */
-  /* border: 1px solid #fff; */
-  height: 20%;
+  /* height: 50px; */
   width: 90%;
   margin: 0 auto;
+ /*  border: 1px solid #fff; */
 }
 .atv_footer-btn {
   background-color: var(--orange);
-  width: 50px;
+  width: 60px;
+  height: 24px;
   border-radius: 5px;
   color: white;
   font-size: 12px;
@@ -74,83 +68,104 @@
   background-color: var(--orange);
 }
 
-
-
 #atv-footer-imgBox {
   margin: 0 auto;
   width: 90%;
   height: 80%;
+/*   border: 1px solid #fff; */
+}
+.gridBox{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4,1fr);
+}
+.gridBox img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+  justify-self: center;
+}
+@media (max-width: 880px) {
+  .gridBox img {
+    max-width: 120px; 
+  }
+}
+@media (max-width: 750px) {
+  .gridBox {
+  }
+  .gridBox img {
+    max-width: 100px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .gridBox {
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: 0 auto;
+  }
+  .gridBox img {
+    max-width: 85px;
+  }
+}
+
+#atv-footer-imgBox > .single {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
-/*   border: 1px solid #fff; */
+
 }
-.img-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 7%;
-  justify-items: center;
-  align-items: center;
+#atv-footer-imgBox > .single > img {
   width: 100%;
-  max-width: 1000px;
-  /* border: 1px solid #fff; */
+  max-height: 80%;
+  object-fit: contain;
 }
-.img-grid img {
-  width: 150px; /* 이미지 크기 고정 */
-  height: auto;
-}
-@media (max-width: 970px) {
-  .img-grid img{
-    width: 130px;
-  }
-}
-@media (max-width: 870px) {
-  .img-grid {
-    grid-template-columns: repeat(2, 1fr); 
-    max-width: 290px;
-    gap: 10%;
-  }
-  .img-grid img{
-    width: 130px;
-  }
-}
-.img-grid.single {
-  display: flex !important;
-  justify-content: center;
-}
-.img-grid.single img{
-  width: 300px !important;
-}/* 이미지 다시 넣고 수정하기기 */
+
+
+
+
 
 /*session 페이지 */
 .session_main{
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+/*   border: 1px solid #fff; */
+  height: 80vh;
+  padding: 20px;
 }
 
 .atv-sections-container{
-  height: 82%; /* sub_title 높이값 12% 제외 */
- /*  background: #666; */
+  height: 78%; /* session-footer 22% 제외 */
+  /* background: #666; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-end;
-  margin-top: 10px;
+ /*  margin-top: 10px; */
 }
 .atv-section {
   display: flex;
-  /* border: 1px solid #fff; */
+/*   border: 1px solid #fff; */
   width: 95%;
-  height: 42%;
+  height: 45%;
+  max-height: 50%;
 }
 
+
 .atv-section_title {
-  /* width: 100px; */
-  width: 9rem;
+  width: 80px;
   display: flex;
   justify-content: flex-end;
-  padding-top: 16px;
-  /* border: 1px solid #fff; */
+  padding-top: 10px;
+/*   border: 1px solid #fff; */
 }
 
 .atv-section_title h1 {
@@ -158,36 +173,38 @@
   font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
+  /* border: 1px solid #fff; */
 }
 
 .atv-section_column {
   border-top: 1px solid rgba(255, 119, 16, 0.3);
-  width: calc(100%-100px);
+  width: calc(100% - 80px);
   padding: 10px 0;
   margin-left: 20px;
 /*   border: 1px solid #fff; */
 }
 .atv-section_column:last-child {
   border-bottom: 1px solid rgba(255, 119, 16, 0.3);
-/*   padding-bottom: 50px; */
 }
 
 .atv-section_column h3 {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  height: 25%;
-  /* border: 1px solid #fff; */
+  height: 15%;
+ /*  border: 1px solid #fff; */
 }
 
 .atv-section-innerbox {
   width: 100%;
-  height: 75%;
+  height: 85%;
   display: flex;
+/*   flex-grow: 1; */
   align-items: flex-start;
   justify-content: space-between;
   /* border: 1px solid #fff; */
-  padding-top: 6px;
+  padding-top: 2%;
+  
 }
 
 .atv-section-innerbox p {
@@ -195,24 +212,26 @@
   height: 100%;
   font-size: 12px;
   line-height: 1.8;
- /*  border: 1px solid #fff; */
+  /* border: 1px solid #fff; */
+  overflow: hidden;
 }
 
 .atv-section-innerbox_left {
-  /* border: 1px solid #fff; */
-  width: 30%;
+ /*  border: 1px solid #fff; */
+  width: 43%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
  /*  align-items: center; */
+ overflow: hidden;
 }
 
 .session_trackBox {
   border: 1px solid #d9d9d9;
   color: #d9d9d9;
   font-size: 10px;
-  height: 15px;
+  height: 17px;
   margin: 3% 3%;
   border-radius: 5px;
   padding: 3% 5%;
@@ -223,39 +242,43 @@
 }
 
 #session-footer {
-  height: 20%;
-  border-top: 1px solid #434343;
+  width: 100%;
+  height: 22%;
   display: flex;
   align-items: center;
   justify-content:center;
-  gap: 5%;
+  gap: 3%;
+  padding: 1rem 0;
+  margin-top: 20px;
 /*   background: #888; */
+/* border: 1px solid #fff; */
 }
 
 .session-footer_btn {
   border: 1px solid rgba(255, 119, 16, 0.3);
-  width: 170px;
+  flex: 1 1 160px;
+  max-width: 190px;
   height: 65px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   background: #1A1A1A;
 }
 
 .session-footer_btn h3 {
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
-  /* margin: 4px 0; */
+  margin: 4px 0;
 }
 
 .session-footer_btn h4 {
   color: var(--orange);
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   margin: 4px 0;
 }
 

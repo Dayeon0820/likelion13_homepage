@@ -1,16 +1,16 @@
-#page_container{
-  height: 77%;
- /*  background: #333; */
+/* #page_container{
+  height: auto;
   padding: 20px;
 }
+ */
+
+
 
 #about_main {
-  width: 100%;
-  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid #fff; */
+ /*  border: 1px solid #fff; */
 }
 
 #about-title {
@@ -18,42 +18,43 @@
   font-size: 14px;
   font-weight: 500;
 /*   margin-top: 40px; */
-  margin-bottom: 20px;
- /*  border: 1px solid #fff; */
+  margin-bottom: 30px;
+/*   border: 1px solid #fff; */
 }
 
-#about-introBox {
+#about_main > #about-introBox {
   background-color: #1f1f1f;
-  width: 70%;
+  width: 67%;
   border-radius: 10px;
-  margin-top: 20px;
   height: 120px;
-  padding: 5px 30px;
+  /* padding: 5px 30px; */
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   max-width: 700px;
+  min-width: 370px;
 }
 #about-introBox h3 {
   color: var(--orange);
   font-weight: bold;
-  margin-bottom: 12px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 #about-introBox p {
   color: var(--white);
   font-size: 12px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-#about-subtitle {
-  /* border: 1px solid #fff; */
+#about_main > .about-subtitle {
+/*   border: 1px solid #fff; */
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   margin: 30px 0;
 }
 
@@ -61,24 +62,48 @@
   color: var(--orange);
 }
 
+#about_main >.about-bit-subtitle{
+ /*  border: 1px solid #fff; */
+}
 .about-contents {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 35px;
+ /*  border: 1px solid #fff; */
 }
 
 .about-contents h4 {
   color: var(--orange);
-  margin-right: 15px;
+  margin-right: 13px;
   font-size: 25px;
 }
 
 .about-contents span {
   color: white;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
+/*   letter-spacing: 1.1px; */
+}
+
+.ring-text {
+  display: inline-block;
+  animation: ringEffect 0.9s ease-in-out 2;
+}
+
+@keyframes ringEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    color: #ff6600;
+  }
+  100% {
+    transform: scale(1);
+    color: #ff7710;
+  }
 }
 
 #about-footer {
@@ -87,74 +112,78 @@
   align-items: center;
   justify-content: center;
   gap: 2%;
-  border-top: 1px solid #434343;
+  margin: 5px 0 40px;
+  /* border-top: 1px solid #434343; */
 }
 
-/*people page */
-#people_header {
-  padding-bottom: 30px;
-}
+
+
+/*======people page====== */
 
 #people_main {
   width: 100%;
+  padding: 4% 6%;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+ /*  border: 1px solid #fff; */
 }
 
 #people-profile_container {
-  width: 60%;
-  max-width: 1200px;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 18px;
+  border: 1px solid #fff;
 }
 
-/*profile component */
-.ab_profile-box {
-  width: 190px;
-  padding: 4px;
-  padding-bottom: 17px;
-  border: 2px solid rgba(88, 88, 88, 1);
-  border-radius: 20px;
-  margin-bottom: 20px;
+.ab_profile-box{
+  /*  width: 170px; */
+  width: 155px;
+  height: 220px;
+  border: 2px solid #585858;
+  padding: 6px;
+  border-radius: 10px;
+  color: #d9d9d9;
+  font-size: 10px;
 }
+
 
 .ab_profile-img {
   width: 100%;
-  height: 180px;
-  border-radius: 20px;
-}
-
-.ab_profile-name {
-  display: flex;
-  align-items: center;
-  padding: 0 14px;
-  margin-top: 5px;
-  height: 20px;
-}
-.ab_profile-name h2 {
-  color: var(--orange);
-  margin-right: 15px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.ab_profile-part {
-  background-color: rgba(88, 88, 88, 1);
+  height: 72%;
   border-radius: 5px;
-  height: 20px;
-  padding: 0 7px;
-  font-size: 11px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
 }
 
-.ab_profile-major {
-  color: var(--white);
-  font-weight: 300;
-  font-size: 11px;
-  margin: 6px 14px 0 14px;
+.ad_profile_txt-box{
+  height: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9px 6px;
 }
+
+.ab_profile-name{
+  display: flex;
+  align-items: center;
+}
+.ab_profile-name > h2{
+  font-size: 13px;
+  color: #ff7710;
+  font-weight: 550;
+  margin-right: 6px;
+}
+.ab_profile-name > p{
+  background: #585858;
+  padding: 1.5px 6px;
+  border-radius: 5px;
+  font-weight: 100;
+  line-height: 16px;
+  font-size: 9.5px;
+}
+
+

@@ -16,8 +16,6 @@ function Button({ title, detail, activeButton, setActiveButton }) {
     >
       <div className="atv_btn-innerbox">
         <h2>{title}</h2>
-      </div>
-      <div className="atv_btn-innerbox">
         <h4>{detail}</h4>
       </div>
     </button>
