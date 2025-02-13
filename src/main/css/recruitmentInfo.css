@@ -1,6 +1,5 @@
 /* ===== recruitmentSection =======*/
 #recruitmentSection{
-    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,11 +148,21 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .infoTxt{
   /*   border: 1px solid #fff; */
     font-size: 12px;
     margin-bottom: 10px;
 }
+/* .infoTxt > h3::after{
+    content:"";
+    background: url("../../img/google_form.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    position: absolute;
+    margin-left: 20px;
+} */
 .infoTxt > h3{
     color: #fff;
     margin-bottom: 7px;
@@ -211,25 +220,29 @@
         align-items: center;
         /* height: 80%; */
         gap: 5px;
+        width: 90%;
     }
 
     .mainLogoContainer > h1 {
-        font-size: 2.5rem;
-/*         border: 1px solid #fff; */
+        font-size: 2.8rem;
+        white-space: nowrap;
+/*         border: 1px solid #fff; 
+*/
     }
     .mainLogoContainer > h1::before{
         height: 30px;
-        margin:2px 0 0;
+        margin: 2px 0 0;
     }
     .mainLogoContainer > .mainLogoKMUWrapper{
         padding-left: 1rem;
+        margin-bottom: 3px;
      /*    border: 1px solid #fff; */
     }
     .mainLogoKMUWrapper> .mainLogoKMUBox{
         gap: 5px;
     }
     .mainLogoKMUBox > h2{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     .lionLogoSpan{
         width: 40px;
@@ -240,41 +253,49 @@
     }
     .aboutUsBtn{
         width: 110px;
-        height: 28px;
+        height: 30px;
         margin: 0 0 2px 1.5rem;
     }
 
     .recruitmentContainer {
         flex-direction: column;
         align-items: center;
-      /*   border: 1px solid #fff; */
         position: relative;
+        height: 76%;
     }
 
     .recruitmentContainer > .imgBox {
         width: 100%;
         height: 100%;
         position: relative;
+        border: none;
+        outline: 1px solid #ff7710;
     }
     .recruitmentContainer > .imgBox::before{
         width: 40%;
     }
 
     .recruitmentContainer > .infoBox {
+        /* border: 1px solid #fff; */
         width: 100%;
         height: 65%;
         margin-top: 20px;
         position: absolute;
         bottom: 0;
-        /* background-color: rgba(0,0,0,0.2); */
-        background: linear-gradient(0deg, rgba(22, 22, 22, 0.84) 40%, rgba(75,75,75,0) 100%);
+        left: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,0.8) 10%, rgba(22, 22, 22, 0.84) 50%, rgba(75,75,75,0) 100%);
         border: none;
     }
 
+    .infoTxt, .addInfo > * , .schedule {
+        margin-left: 5px;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+     /*    border: 1px solid #fff; */
+    }
     .infoTxt > h3 {
         font-size: 16px;
     }
-
+    
     .infoTxt > h2 {
         font-size: 18px;
     }
@@ -286,19 +307,12 @@
     }
     .infoBox > .joinBtn{
         width: 110px;
-        height: 28px;
+        height: 30px;
         position: absolute;
-        bottom: 5%;
-    }
-   /*  .joinBtn {
-        width: 100%;
-        height: 45px;
+        bottom: 8%;
+        right: 5%;
     }
 
-    .commonBtn {
-        width: 100%;
-        font-size: 14px;
-    } */
 }
 
 /* 480px 이하 화면 */

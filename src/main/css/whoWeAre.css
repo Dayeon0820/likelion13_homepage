@@ -44,7 +44,7 @@
     padding: 25px;
     gap: 20px;
     /* border: 1px solid #fff; */
-    /* 스크롤 맞춰서 애니메이션션 */
+
     opacity: 0;
     transform: translateY(-50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -61,4 +61,11 @@
     text-align: center;
     font-weight: lighter;
     line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+    .WWAIntroductionBox{
+        width: 73%;
+    }
 }

@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     justify-self: center;
-    overflow-y: auto; /* 임시시 */
+   /*  overflow-y: auto;  */
 }
 .FAQTitle{
     display: flex;
@@ -41,6 +41,7 @@
 }
 .FAQLists > li{
     display: flex;
+    align-items: flex-start;
     gap: 10px;
    /*  flex: 1 1 auto; */
 
@@ -65,7 +66,10 @@
     opacity: 1;
 }
 
-
+.FAQLists > li > h3{
+  /*   border: 1px solid #fff; */
+    line-height: 15px;
+}
 .FAQLists > li
 .QAndA > h4{
     margin-bottom: 10px;
@@ -73,4 +77,39 @@
 .QAndA > p{
     line-height: 1.5;
     color: #d9d9d9;
+}
+
+
+@media (max-width: 768px) {
+    #FAQSection {
+        padding: 5vh 6vw;
+    }
+    #FAQSection > .FAQLogoBox{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .FAQLogoBox > img{
+        width: 150px;
+    }
+    #FAQSection > .FAQContainer{
+        width: 90%;
+    }
+    .FAQTitle > h3 {
+        font-size: 20px;
+    }
+    .FAQTitle > .FAQ > p{
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    .FAQLists{
+        gap: 20px;
+        margin-left: 60px;
+    }
+    .FAQLists > li{
+        gap: 6px;
+    }
+    .QAndA > h4{
+        white-space: nowrap;
+        font-size: 15px;
+    }
 }

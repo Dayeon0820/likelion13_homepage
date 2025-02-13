@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../main.css";
 import "../css/recruitmentInfo.css";
 import LionLogo from "../../img/lion_logo.svg";
+import QR from "../../img/google_form.png";
 
 
 const RecruitmentInfo = () => {
