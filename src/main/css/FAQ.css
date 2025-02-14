@@ -113,3 +113,13 @@
         font-size: 15px;
     }
 }
+
+@media (max-width: 524px){
+    .FAQLogoBox > img{
+        padding-top: 15px;
+    }
+    .FAQLists{
+        margin-left: 10px;
+        gap: 30px;
+    }
+}

@@ -49,7 +49,7 @@ function IntroductionAbout() {
 
   const AboutFooterItems = [
     { title: "VOD 강의 제공", subtitle: "온/오프라인 학습", isTitleH4: false },
-    { title: "서비스 빌딩을 위한", subtitle: "월/목", isTitleH4: true },
+    { title: "멘토링 및", subtitle: "스터디 운영", isTitleH4: true },
     { title: "중앙/교내", subtitle: "아이디어톤", isTitleH4: false },
     { title: "멋사의 꽃", subtitle: "해커톤", isTitleH4: false },
   ];

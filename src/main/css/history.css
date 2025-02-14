@@ -160,3 +160,37 @@
      /*    border: 1px solid #fff; */
     }
 }
+
+@media (max-width: 524px){
+    .historyContainer > .imgWrapper{
+      /*   width: 15%; */
+        display: none;
+    }
+    .historyContainer > .historyWrapper{
+        width: 100%;
+    }
+    .historyWrapper > .historyPoints{
+        width: 75px;
+        margin-right: 10px;
+    }
+    .historyWrapper > .historyLists{
+        width: calc(100% - 75px);
+    }
+    .historyLists li{
+        flex-direction: column;
+    }
+    .historyLists li .content{
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    /*     border: 1px solid #fff; */
+    }
+    .historyLists li .content span{
+        font-size: 14px;
+    }
+    .historyLists li img{
+        width: 26vw;
+        margin: 0;
+    }
+}

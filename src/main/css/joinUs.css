@@ -135,3 +135,27 @@
       white-space: nowrap;
    }
 }
+
+@media (max-width: 524px){
+   /* #joinUsSection{
+      height: auto;
+   } */
+   .joinContent{
+      padding: 40px 8vw;
+      height: 85%;
+   }
+   .joinContent > .joinBox{
+      /* flex-direction: column;
+      height: auto; */
+   }
+   .joinBox > img {
+      height: 100%;
+   }
+   .joinBox > .qualitiesList {
+      display: none;
+   }
+
+   .joinContent > .ctaBox{
+      display: none;
+   }
+}

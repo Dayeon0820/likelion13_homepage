@@ -8,6 +8,7 @@ import History from "./sections/history";
 import FAQ from "./sections/FAQ";
 import JoinUs from "./sections/joinUs";
 import Footer from "../default/footer";
+import MobilePage from "../main/sections/mobile";
 
 const MainPage=()=>{
 
@@ -18,6 +19,7 @@ const MainPage=()=>{
             <History/>
             <FAQ/>
             <JoinUs/>
+            <MobilePage/>
             <div className="footer-container scrollSection">
                 <Footer />
             </div>

@@ -38,7 +38,7 @@ const JoinUs = () => {
                         </div>
                     </div>
                     <div className="ctaBox">
-                        <p className='font12'>이제 멋쟁이사자처럼 at 국민대에서 꿈을 펼쳐 볼 시간,</p>
+                        <p className='font12'>이제 멋쟁이사자처럼 at 국민대에서 꿈을 펼쳐 볼 시간</p>
                         <button className="joinBtn commonBtn joinBtn-lastPage">
                             <a href="https://forms.gle/mqwKMLhqsaSJCt6s7" target="_blank" rel="noopener noreferrer">
                             JOIN US↗

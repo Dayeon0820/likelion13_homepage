@@ -196,12 +196,12 @@
     min-width: 100px;
   } */
   #page_container{
-    border: 1px solid #fff;
+  /*   border: 1px solid #fff; */
     width: 90%;
   }
 
   .common-sub_title_box{
     padding: 0 3%;
-    border: 1px solid #fff;
+/*     border: 1px solid #fff; */
   }
 }

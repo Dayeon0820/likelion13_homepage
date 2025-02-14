@@ -21,6 +21,10 @@
 .scrollSection_center{
     scroll-snap-align: center;
 }
+.scrollSection_start{
+    scroll-snap-align: start;
+}
+
 
 /* =====버튼===== */
 .joinBtn{
@@ -53,6 +57,11 @@
 }
 
 
+
+#MobileSection{
+    display: none;
+} 
+
 /* =======footer-container====== */
 .footer-container {
    /*  border: 1px solid #fff; */
@@ -62,3 +71,12 @@
     justify-content: center;
   }
   
+
+  @media (max-width: 524px){
+    #MobileSection{
+        display: block;
+    }
+    .footer-container{
+        display: none;
+    }
+  }

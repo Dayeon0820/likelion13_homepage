@@ -330,34 +330,90 @@
 
 }
 
-/* 480px 이하 화면 */
-@media (max-width: 480px) {
+/* 524px 이하 화면 */
+@media (max-width: 524px) {
     .mainLogoContainer > h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+    .mainLogoKMUBox > h2{
+        font-size: 2.5rem;
+    }
+    .lionLogoSpan{
+        width: 35px;
+        height: 40px;
     }
 
-    .kmuTxt::after {
-        display: none;
+    .recruitmentContainer{
+      /*   border: 1px solid #fff; */
+        height: 78%;    
     }
-
     .recruitmentContainer > .imgBox {
-        height: 150px;
+        height: 145px;
     }
-
+    .recruitmentContainer > .imgBox::before{
+        height: 25%;
+    }
     .recruitmentContainer > .infoBox {
+        height: 68%;
+        border: 1px solid #585858;
         padding: 2% 3%;
+        justify-content: space-between;
+        gap: 4%;
     }
 
+    .infoTxt{
+        height: 26%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .infoTxt > h3::after{
+        content: "";
+        display: inline-block;
+        background: url("../../img/google_form.png") no-repeat center;
+        width: 65px;
+        height: 65px;
+        background-size: contain;
+        position:absolute;
+    /*     margin-left: 100px; */
+        right: 60px;
+        top: 22px;
+    }
     .infoTxt > h3 {
-        font-size: 14px;
+        padding-top: 14px;
+        font-size: 17px;
     }
 
     .infoTxt > h2 {
-        font-size: 16px;
+        font-size: 19px;
+    }
+    /* .infoTxt > p{
+        display: block;
+    } */
+    .infoBox > .joinBtn{
+        height: 22px;
+        width: 85px;
+        bottom: 67%;
+        right: 50px;
+        border-radius: 6px;
+        font-size: 13px;
     }
 
+    .scheduleTitle{
+        font-size: 18px;
+    }
     .schedule > li {
-        font-size: 10px;
+        font-size: 16px;
+        margin-bottom: 8px;
+        letter-spacing: 0.3px;
+    }
+    .schedule > li > strong{
+        font-size: 15px;
+    }
+
+    .addInfo > h4 > span{
+        font-size: 15px;
     }
 
     .joinBtn {

@@ -69,3 +69,24 @@
         width: 73%;
     }
 }
+@media (max-width: 524px){
+    #WWASection{
+        padding: 8vh 6vw;
+        gap: 10vh;
+    }
+    .WWAIntroductionBox{
+        width: 100%;
+    }
+    .WWAIntroductionBox > p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .WWAIntroductionBox::before{
+        content: "";
+        display: inline-block;
+        background: url("../../img/LIKELION_logo_arrow.png") no-repeat center;
+        width: 100px;
+        height: 50px;
+        background-size: contain;
+    }
+}
