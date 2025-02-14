@@ -11,7 +11,7 @@ const Header=()=>{
         <header className='header'>
             <h4 className="logoTitle">
                 <Link to="/" className="logoLink">
-                    LIKELION UNIV. <span className="logoHighlight">X</span> KMU
+                    <span className='logoTxt'>LIKELION UNIV. </span><span className="logoHighlight xTxt">X</span> KMU
                 </Link>
             </h4>
             <nav className="headerNavbar">

@@ -7,7 +7,7 @@ import Footer from "../../default/footer";
 function ActivitesCurriculum() {
   const [activeButton, setActiveButton] = useState("development");
   const title = "CURRICULUM";
-  const subtitle = "2025 멋쟁이사자처럼 국민대학교 13기 아기사자 교육일정";
+  const subtitle = "멋쟁이사자처럼 국민대학교 13기 아기사자 교육일정";
   const p = `멋쟁이사자처럼 국민대학교 13기 세션은 디자인 트랙과 개발 트랙 2가지로
           나뉘어 진행합니다`;
   return (

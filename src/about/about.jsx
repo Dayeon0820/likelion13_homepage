@@ -19,7 +19,7 @@ function About() {
       title: "소개",
       detail: "INTRODUCTION",
     },
-    
+    /* 
     {
       title: "국민대 멋사의 역사",
       detail: "OUR HISTORY",
@@ -27,7 +27,7 @@ function About() {
     {
       title: "우리가 이룬 것",
       detail: "WHAT WE ACHIEVE",
-    },
+    }, */
    
     {
       title: "운영진",

@@ -212,6 +212,23 @@
 
 
 /* ===== Media Queries (반응형 스타일 적용) ===== */
+@media (max-width: 1220px){
+    .kmuTxt::after{
+        font-size: 10px;
+        left: 4px;
+    }
+    .recruitmentContainer{
+       /*  border: 1px solid #fff; */
+        height: 72%;
+    }
+    .recruitmentContainer > .imgBox{
+        width: 58%;
+    }
+    .recruitmentContainer > .infoBox{
+        width: 40%;
+    }
+}
+
 
 /* 768px 이하 화면 */
 @media (max-width: 768px) {
@@ -226,8 +243,6 @@
     .mainLogoContainer > h1 {
         font-size: 2.8rem;
         white-space: nowrap;
-/*         border: 1px solid #fff; 
-*/
     }
     .mainLogoContainer > h1::before{
         height: 30px;

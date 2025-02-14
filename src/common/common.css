@@ -65,10 +65,9 @@
 #atv_button {
   width: 160px;
   height: 44px;
-
+/*   min-width: 160px; */
   border-radius: 10px;
   flex-direction: column;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +79,7 @@
 
 .atv_btn-innerbox {
   width: 100%;
-  height: 50%; 
+  height: 80%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,3 +177,31 @@
  .orange_txt{
   color: #ff7710;
  }
+
+
+
+
+
+ @media (max-width: 950px) {
+  .page_header > .page_header_inner{
+    width: 90%;
+/*     background: #333; */
+  }
+  #page_button-box{
+    width: 100%;
+/*     border: 1px solid #fff; */
+    gap: 0;
+  }
+ /*  #atv_button{
+    min-width: 100px;
+  } */
+  #page_container{
+    border: 1px solid #fff;
+    width: 90%;
+  }
+
+  .common-sub_title_box{
+    padding: 0 3%;
+    border: 1px solid #fff;
+  }
+}
