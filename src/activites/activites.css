@@ -4,15 +4,11 @@
   /* background: #444; */
 }
 
-.active-common-footer{
-  border-top: 1px solid #434343;
-}
-
 
 /* 커리큘럼 페이지 */
 #curriculum_main{
-/*   border: 1px solid #fff; */
-  padding: 4% 6%;
+  /* border: 1px solid #fff; */
+  padding: 20px 6%;
   width: 100%;
 }
 
@@ -22,8 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #333; */
-  margin: 10px auto 20px;
+/*   background: #333; */
+  margin: 0 auto 20px;
 }
 
 #atv_curriculum-img_box img {
@@ -39,6 +35,7 @@
   padding: 12px 1%;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #585858;
 /*   border: 1px solid #fff; */
 }
 #atv_footer-btnBox {
@@ -104,24 +101,13 @@
     max-width: 120px; 
   }
 }
-@media (max-width: 750px) {
-  .gridBox {
-  }
+
+@media (max-width: 680px){
   .gridBox img {
-    max-width: 100px; 
+    max-width: 120px;
   }
 }
 
-/* @media (max-width: 600px) {
-  .gridBox {
-    grid-template-columns: repeat(2, 1fr);
-    width: 50%;
-    margin: 0 auto;
-  }
-  .gridBox img {
-    max-width: 85px;
-  }
-} */
 
 #atv-footer-imgBox > .single {
   width: 100%;
@@ -147,26 +133,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-/*   border: 1px solid #fff; */
-  height: 80vh;
-  padding: 20px;
+  padding: 20px 20px;
 }
 
 .atv-sections-container{
-  height: 78%; /* session-footer 22% 제외 */
-/*   background: #666; */
+  height: auto; 
+  /* background: #666; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
- /*  margin-top: 10px; */
 }
 .atv-section {
   display: flex;
   /* border: 1px solid #fff; */
   width: 95%;
-  height: 45%;
-  max-height: 50%;
+  height: 200px;
+  /* max-height: 50%; */
 }
 
 
@@ -253,13 +236,12 @@
 
 #session-footer {
   width: 100%;
-  height: 22%;
+  /* height: 22%; */
   display: flex;
   align-items: center;
   justify-content:center;
   gap: 3%;
-  padding: 1rem 0;
-  margin-top: 20px;
+  margin: 50px 0;
 /*   background: #888; */
 /* border: 1px solid #fff; */
 }
@@ -299,14 +281,16 @@
   margin: 4px 0;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
   .atv-section{
     width: 100%;
+    height: 180px;
   }
   .atv-section-innerbox{
     flex-direction: column;
     justify-content: space-between;
-   /*  gap: 4%; */
+ /*    border: 1px solid #fff; */
+    gap: 4%;
   }
   .atv-section-innerbox p{
     width: 100%;
@@ -320,7 +304,7 @@
    /*  border: 1px solid #fff; */
   }
   .session_trackBox{
-    padding: 2% 3%;
+    padding: 8px 9px;
     margin: 1% 2%;
   }
 }

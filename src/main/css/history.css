@@ -147,7 +147,7 @@
     margin:0 11vw 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .historyContainer{
         /* border: 1px solid #fff; */
     }
@@ -158,6 +158,12 @@
     .historyContainer > .historyWrapper{
         width: 80%;
      /*    border: 1px solid #fff; */
+    }
+    .historyLists li .content{
+        font-size: 12px;
+    }
+    .historyLists li .content span{
+        font-size: 11px;
     }
 }
 
@@ -180,14 +186,15 @@
         flex-direction: column;
     }
     .historyLists li .content{
-        font-size: 16px;
+        font-size: 12px;
+        font-weight: 300;
         display: flex;
         flex-direction: column;
         gap: 6px;
     /*     border: 1px solid #fff; */
     }
     .historyLists li .content span{
-        font-size: 14px;
+        font-size: 11px;
     }
     .historyLists li img{
         width: 26vw;

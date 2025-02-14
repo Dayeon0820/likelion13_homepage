@@ -213,33 +213,10 @@
 
 /* ===== Media Queries (반응형 스타일 적용) ===== */
 @media (max-width: 1220px){
-    .kmuTxt::after{
-        font-size: 10px;
-        left: 4px;
+    #recruitmentSection{
+        justify-content: space-around;
     }
-    .recruitmentContainer{
-       /*  border: 1px solid #fff; */
-        height: 72%;
-    }
-    .recruitmentContainer > .imgBox{
-        width: 58%;
-    }
-    .recruitmentContainer > .infoBox{
-        width: 40%;
-    }
-}
-
-
-/* 768px 이하 화면 */
-@media (max-width: 768px) {
-    .mainLogoContainer {
-        /* flex-direction: row; */
-        align-items: center;
-        /* height: 80%; */
-        gap: 5px;
-        width: 90%;
-    }
-
+    
     .mainLogoContainer > h1 {
         font-size: 2.8rem;
         white-space: nowrap;
@@ -260,11 +237,13 @@
         font-size: 2.8rem;
     }
     .lionLogoSpan{
-        width: 40px;
-        height: 45px;
+        width: 45px;
+        height: 50px;
     }
     .kmuTxt::after{
-        display: none;
+        font-size: 8px;
+        letter-spacing: 0.2px;
+        top: -7%;
     }
     .aboutUsBtn{
         width: 110px;
@@ -272,11 +251,81 @@
         margin: 0 0 2px 1.5rem;
     }
 
+    .recruitmentContainer{
+       /*  border: 1px solid #fff; */
+        height: 72%;
+    }
+    .recruitmentContainer > .imgBox{
+        width: 56%;
+    }
+    .recruitmentContainer > .infoBox{
+        width: 42%;
+    }
+    .infoTxt > h3 {
+        font-size: 16px;
+    }
+    
+    .infoTxt > h2 {
+        font-size: 18px;
+    }
+    .infoTxt > p{
+        font-size: 10px;
+    }
+
+    .scheduleTitle{
+        font-size: 14px;
+    }
+    .schedule > li {
+        font-size: 12px;
+       /*  margin-bottom: 8px; */
+        letter-spacing: 0.3px;
+    }
+    .schedule > li > strong{
+        font-size: 13px;
+    }
+
+    .addInfo > h4 > span{
+        font-size: 12px;
+    }
+
+    .infoBox > .joinBtn{
+        width: 110px;
+        height: 30px;
+        position: absolute;
+        bottom: 4%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    #recruitmentSection{
+        justify-content: space-between;
+    }
+    .mainLogoContainer {
+        /* flex-direction: row; */
+        align-items: center;
+        /* height: 80%; */
+        gap: 5px;
+        width: 90%;
+    }
+
+    
+    .lionLogoSpan{
+        width: 40px;
+        height: 45px;
+    }
+    .kmuTxt::after{
+        display: none;
+    }
+    .aboutUsBtn{
+        margin: 0 0 2px 1.5rem;
+    }
+
     .recruitmentContainer {
         flex-direction: column;
         align-items: center;
         position: relative;
-        height: 76%;
+        height: 74%;
     }
 
     .recruitmentContainer > .imgBox {
@@ -294,7 +343,8 @@
         /* border: 1px solid #fff; */
         width: 100%;
         height: 65%;
-        margin-top: 20px;
+       /*  margin-top: 20px; */
+        padding: 0 2% !important;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -307,23 +357,18 @@
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
      /*    border: 1px solid #fff; */
     }
-    .infoTxt > h3 {
-        font-size: 16px;
-    }
-    
-    .infoTxt > h2 {
-        font-size: 18px;
-    }
     .infoTxt > p{
         display: none;
     }
     .infoBox > .addInfo > h4:nth-of-type(2){
         display: none;
     }
+    .schedule{
+        margin-bottom: 15px;
+    }
+
+
     .infoBox > .joinBtn{
-        width: 110px;
-        height: 30px;
-        position: absolute;
         bottom: 8%;
         right: 5%;
     }
@@ -333,91 +378,81 @@
 /* 524px 이하 화면 */
 @media (max-width: 524px) {
     .mainLogoContainer > h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+    .mainLogoContainer > h1::before{
+        height: 28px;
+        margin: 2px 0 0;
     }
     .mainLogoKMUBox > h2{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .lionLogoSpan{
         width: 35px;
-        height: 40px;
+        height: 38px;
+    }
+    .aboutUsBtn{
+        width: 100px;
+        height: 26px;
+        font-size: 12px;
     }
 
     .recruitmentContainer{
       /*   border: 1px solid #fff; */
-        height: 78%;    
+        height: 77%;
     }
     .recruitmentContainer > .imgBox {
-        height: 145px;
+        height: 134px;
     }
     .recruitmentContainer > .imgBox::before{
-        height: 25%;
+        height: 28%;
     }
     .recruitmentContainer > .infoBox {
-        height: 68%;
+        height: 66%;
         border: 1px solid #585858;
         padding: 2% 3%;
         justify-content: space-between;
-        gap: 4%;
     }
 
     .infoTxt{
-        height: 26%;
+        height: 23%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+   /*      border: 1px solid #fff; */
     }
 
-    .infoTxt > h3::after{
-        content: "";
-        display: inline-block;
-        background: url("../../img/google_form.png") no-repeat center;
-        width: 65px;
-        height: 65px;
-        background-size: contain;
-        position:absolute;
-    /*     margin-left: 100px; */
-        right: 60px;
-        top: 22px;
-    }
     .infoTxt > h3 {
-        padding-top: 14px;
-        font-size: 17px;
+        padding-top: 25px;
+        font-size: 15px;
     }
 
     .infoTxt > h2 {
-        font-size: 19px;
-    }
-    /* .infoTxt > p{
-        display: block;
-    } */
-    .infoBox > .joinBtn{
-        height: 22px;
-        width: 85px;
-        bottom: 67%;
-        right: 50px;
-        border-radius: 6px;
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .scheduleTitle{
-        font-size: 18px;
+        font-size: 13px;
     }
     .schedule > li {
-        font-size: 16px;
+        font-size: 12px;
         margin-bottom: 8px;
         letter-spacing: 0.3px;
     }
     .schedule > li > strong{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .addInfo > h4 > span{
-        font-size: 15px;
+        font-size: 12px;
     }
 
-    .joinBtn {
-        width: 100%;
-        height: 45px;
+    .infoBox > .joinBtn{
+        width: 100px;
+        height: 26px;
+        font-size: 12px;
+        bottom: 6%;
     }
+
+    
 }

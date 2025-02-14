@@ -18,7 +18,7 @@ const Header=()=>{
                 <ul>
                     <li><NavLink  to="/about" className={({ isActive }) => isActive ? "active" : ""}>ABOUT US</NavLink></li>
                     <li><NavLink to="/activities" className={({ isActive }) => isActive ? "active" : ""}>ACTIVITIES</NavLink></li>
-                    <li><NavLink to="/community" className={({ isActive }) => isActive ? "active" : ""}>COMMUNITY</NavLink></li>
+                    {/* <li><NavLink to="/community" className={({ isActive }) => isActive ? "active" : ""}>COMMUNITY</NavLink></li> */}
                 </ul>
                 <button className="loginBox">LOGIN</button>
             </nav>
