@@ -10,6 +10,7 @@ import JoinUs from "./sections/joinUs";
 import Footer from "../default/footer";
 import MobilePage from "../main/sections/mobile";
 
+
 const MainPage=()=>{
 
     return(

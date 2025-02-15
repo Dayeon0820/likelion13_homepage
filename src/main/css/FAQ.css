@@ -49,24 +49,28 @@
 
    opacity: 0;
    transform: translateX(-50px);
-   transition: transform 1s ease-out, opacity 1s ease-out;
+   transition: transform 1s cubic-bezier(0.4, 0.5, 0.1, 0.8), opacity 1s ease-out;
 }
-/* .FAQLists > li:nth-of-type(1){
-   transition-delay: 0.1s;
-}
-.FAQLists > li:nth-of-type(2){
-   transition-delay: 0.2s;
-}
-.FAQLists > li:nth-of-type(3){
-   transition-delay: 0.3s;
-}
-.FAQLists > li:nth-of-type(4){
-   transition-delay: 0.4s;
-} */
 .FAQLists > li.show{
     transform: translateX(0);
     opacity: 1;
 }
+.FAQLists > li:nth-of-type(1).show{
+   transition-delay: 0.2s;
+}
+.FAQLists > li:nth-of-type(2).show{
+   transition-delay: 0.6s;
+}
+.FAQLists > li:nth-of-type(3).show{
+   transition-delay: 1.0s;
+}
+.FAQLists > li:nth-of-type(4).show{
+   transition-delay: 1.4s;
+}
+.FAQLists > li:nth-of-type(5).show{
+   transition-delay: 1.8s;
+}
+
 
 .FAQLists > li > h3{
   /*   border: 1px solid #fff; */

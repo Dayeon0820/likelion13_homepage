@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 // import { Link } from "react-router-dom";
 import "../css/joinUs.css"
 
@@ -12,6 +12,8 @@ const JoinUs = () => {
         { description: "톡톡 튀는 아이디어 뱅크" },
         { description: "자신의 손으로 직접 서비스를 만들어 보고 싶은 사람" },
     ];
+
+    
 
     return (
         <section id="joinUsSection" className="mainSection scrollSection">
