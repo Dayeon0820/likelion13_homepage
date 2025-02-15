@@ -141,11 +141,34 @@
 }
 
 @media (max-width: 524px){
+    #FAQSection > .FAQContainer{
+        gap: 10px;
+    }
     .FAQLogoBox > img{
         /* padding-top: 15px; */
+        width: 115px;
     }
+    .FAQTitle > h3{
+        font-size: 15px;
+        width: 60px;
+    }
+    .FAQTitle > .FAQ > h3{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .FAQTitle > .FAQ > p{
+        font-size: 9px;
+    }
+    
     .FAQLists{
         margin-left: 10px;
         gap: 20px;
+    }
+    .FAQLists > li .QAndA > h4{
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+    .QAndA > p{
+        font-size: 9.5px;
     }
 }

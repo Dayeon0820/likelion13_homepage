@@ -52,7 +52,7 @@ const RecruitmentInfo = () => {
                     </ul>
                     <div className="addInfo">
                         <h4 className='activityPeriod scheduleTitle'>활동기간 <span>2025.03 - 2025.12</span></h4>
-                        <h4 className="contact scheduleTitle">문의 <span>@likelion_kmu</span></h4>
+                        <h4 className="contact scheduleTitle">문의 <span>010-9911-2830｜@likelion_kmu</span></h4>
                     </div>
                     <button className="commonBtn joinBtn">
                         <a href="https://forms.gle/mqwKMLhqsaSJCt6s7" target="_blank" rel="noopener noreferrer">

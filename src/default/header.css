@@ -30,7 +30,7 @@
     /* border: 1px solid #fff; */
 }
 .logoTitle > a > .xTxt{
-    margin: 0 2px;
+    margin: 0 3px;
 }
 .logoHighlight{
     color: #FF7710;
@@ -82,10 +82,24 @@
         border: 1px solid #fff;
     } */
     .logoTitle:nth-child(1)::before{
-        width: 24px;
+        width: 20px;
     }
     .logoLink > .logoTxt{
         border: 1px solid #fff;
         display: none;
+    }
+    .logoTitle{
+        font-size: 14px;
+    }
+
+    .headerNavbar{
+        font-size: 11px;
+        gap: 15px;
+    }
+
+    .headerNavbar > .loginBox{
+        font-size: 11px;
+        padding: 4px 10px;
+        border-radius: 4px;
     }
 }

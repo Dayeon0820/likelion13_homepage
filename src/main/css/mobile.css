@@ -18,8 +18,7 @@
     align-items: center;
     justify-content: center;
     gap: 1vh;
-    height: 110px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 /*     border: 1px solid #fff; */
 }
 .inquiryTitleBox > img{
@@ -27,10 +26,10 @@
     background-size: contain;
 }
 .inquiryTitleBox > p{
-    font-size: 13px;
+    font-size: 12px;
 }
 .inquiryTitleBox > h5{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -38,10 +37,10 @@
     background: #1f1f1f;
     padding: 3%;
     width: 82%;
-    height: 160px;
+    height: 130px;
     margin: 0 auto;
-    border-radius: 15px;
-    margin-bottom: 130px;
+    border-radius: 10px;
+    margin-bottom: 100px;
 }
 .inquiryContents > h4{
     width: 100%;
@@ -49,8 +48,7 @@
     border-bottom: 1px solid #585858;
     text-align: center;
     font-weight: lighter;
-    font-size: 13px;
-    padding-top: 2px;
+    font-size: 12px;
 }
 .inquiryContents > .innerBox{
     height: 80%;
@@ -59,16 +57,19 @@
     align-items: center;
     justify-content: space-around;
 }
+.innerBox > h3{
+    font-size: 14px;
+}
 .innerBox > .instaBox{
     text-align: center;
 }
 .instaBox > p{
     font-weight: 300;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 8px;
 }
 .instaBox > h5{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -83,7 +84,7 @@
 }
 #MobileSection > .joinBtnBox > p{
     color: #d9d9d9;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     margin-bottom: 20px;
 }

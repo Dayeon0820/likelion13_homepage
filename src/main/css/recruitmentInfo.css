@@ -343,7 +343,7 @@
         /* border: 1px solid #fff; */
         width: 100%;
         height: 65%;
-       /*  margin-top: 20px; */
+        justify-content: center;
         padding: 0 2% !important;
         position: absolute;
         bottom: 0;
@@ -377,38 +377,51 @@
 
 /* 524px 이하 화면 */
 @media (max-width: 524px) {
+    .mainLogoContainer{
+        width: 97%;
+        margin: 0 auto;
+    }
     .mainLogoContainer > h1 {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
     }
     .mainLogoContainer > h1::before{
-        height: 28px;
-        margin: 2px 0 0;
+        width: 40px;
+        height: 20px;
+        margin: 0;
     }
     .mainLogoKMUBox > h2{
-        font-size: 2.3rem;
+        font-size: 1.8rem;
     }
     .lionLogoSpan{
-        width: 35px;
-        height: 38px;
+        display: none;
     }
-    .aboutUsBtn{
-        width: 100px;
-        height: 26px;
-        font-size: 12px;
+    .aboutUsBtn,.infoBox > .joinBtn{
+        width: 80px;
+        height: 22px;
+        font-size: 10px;
+        border-radius: 5px;
+        letter-spacing: 0.6px;
     }
 
     .recruitmentContainer{
       /*   border: 1px solid #fff; */
-        height: 77%;
+        width: 97%;
+        margin: 0 auto;
+        height: 79%;
+    }
+    .recruitmentContainer > .imgBox, .recruitmentContainer >.infoBox{
+        border-radius: 7px;
+        outline: none;
     }
     .recruitmentContainer > .imgBox {
-        height: 134px;
+        height: 120px;
+        border: 1px solid #ff7710;
     }
     .recruitmentContainer > .imgBox::before{
-        height: 28%;
+        height: 29%;
     }
     .recruitmentContainer > .infoBox {
-        height: 66%;
+        height: 67%;
         border: 1px solid #585858;
         padding: 2% 3%;
         justify-content: space-between;
@@ -424,33 +437,30 @@
 
     .infoTxt > h3 {
         padding-top: 25px;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .infoTxt > h2 {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .scheduleTitle{
-        font-size: 13px;
+        font-size: 12px;
     }
     .schedule > li {
-        font-size: 12px;
+        font-size: 10px;
         margin-bottom: 8px;
         letter-spacing: 0.3px;
     }
     .schedule > li > strong{
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .addInfo > h4 > span{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .infoBox > .joinBtn{
-        width: 100px;
-        height: 26px;
-        font-size: 12px;
         bottom: 6%;
     }
 
