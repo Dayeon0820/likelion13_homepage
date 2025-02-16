@@ -13,12 +13,8 @@
 
 #atv_curriculum-img_box {
   width: 90%;
-<<<<<<< HEAD
   /* height: 300px; */
   height: clamp(150px, 20vw, 300px); 
-=======
-  height: 300px;
->>>>>>> origin/gallery/mobile
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,28 +89,6 @@
   justify-self: center;
 }
 
-<<<<<<< HEAD
-=======
-@media (max-width: 950px) {
-  #curriculum_main {
-    padding: 4% 3%;
-  }
-  #atv_curriculum-img_box {
-    width: 85%;
-  }
-}
-@media (max-width: 880px) {
-  .gridBox img {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 680px) {
-  .gridBox img {
-    max-width: 120px;
-  }
-}
->>>>>>> origin/gallery/mobile
 
 #atv-footer-imgBox > .single {
   width: 100%;
@@ -130,7 +104,6 @@
   object-fit: contain;
 }
 
-<<<<<<< HEAD
 @media (max-width: 950px){
   #curriculum_main{
     padding: 4% 3%;
@@ -167,8 +140,6 @@
 
 
 
-=======
->>>>>>> origin/gallery/mobile
 /*session 페이지 */
 .session_main {
   display: flex;
@@ -199,11 +170,7 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 10px;
-<<<<<<< HEAD
   /* border: 1px solid #fff; */
-=======
-  /*   border: 1px solid #fff; */
->>>>>>> origin/gallery/mobile
 }
 
 .atv-section_title h1 {
@@ -284,12 +251,8 @@
   /* height: 22%; */
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   justify-content:center;
   flex-wrap: nowrap;
-=======
-  justify-content: center;
->>>>>>> origin/gallery/mobile
   gap: 3%;
   margin: 50px 0;
   /*   background: #888; */
@@ -339,10 +302,6 @@
   .atv-section-innerbox {
     flex-direction: column;
     justify-content: space-between;
-<<<<<<< HEAD
-=======
-    /*    border: 1px solid #fff; */
->>>>>>> origin/gallery/mobile
     gap: 4%;
   }
   .atv-section-innerbox p {
@@ -362,7 +321,6 @@
   }
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px){
   .atv-section{
     height: 165px;
@@ -422,8 +380,6 @@
 }
 
 
-=======
->>>>>>> origin/gallery/mobile
 /*project page*/
 
 .atv_project-title {
@@ -488,7 +444,7 @@
   padding: 0px;
   padding-bottom: 13px;
   border: 2px solid rgba(88, 88, 88, 1);
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -501,7 +457,7 @@
 .common_atv-img img {
   width: 97%;
   height: 130px;
-  border-radius: 15px;
+  border-radius: 7px;
   object-fit: cover;
 }
 
