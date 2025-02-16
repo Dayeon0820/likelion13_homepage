@@ -138,7 +138,6 @@
 
 /*=====suvtitle.jsx======= */
 .common-sub_title_box{
-/*    border: 1px solid #fff; */
    padding: 20px 6%;
    width: 100%;
    height: 20%;
@@ -153,7 +152,7 @@
    align-items: center;
   /*  height: 35px; */
    margin-bottom: 5px;
-  /*  border: 1px solid #fff; */
+   /* border: 1px solid #fff; */
    white-space: nowrap;
  }
  
@@ -208,13 +207,15 @@
 /*     border: 1px solid #fff; */
   }
 }
-
-@media (max-width: 680px){
+@media (max-width: 768px){
   #page_body > .page_header{
     height: 20vh;
   }
   .page_header-title{
     font-size: 22px;
+  }
+  .page_header p{
+    font-size: 10px;
   }
 
   #page_button-box{
@@ -235,10 +236,60 @@
 
   
   .common-title h1{
-    font-size: 16px;
+    font-size: 15px;
   }
   .common-title h4{
     font-size: 12px;
+  }  
+  .common-sub{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 524px){
+  .page_header-title{
+    font-size: 20px;
+  }
+  .page_header p{
+    font-size: 9px;
   }
 
+  #page_button-box{
+   /*  border: 1px solid #fff; */
+    width: 80%;
+  }
+  #atv_button{
+    width: 130px;
+    height: 38px;
+    border-radius: 8px;
+  }
+  #atv_button h2{
+    font-size: 8px;
+    font-weight: 500;
+  }
+  #atv_button h4{
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  #page_container{
+    padding: 20px 15px;
+  }
+
+  .common-title{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .common-title h1{
+    font-size: 12px;
+  }
+  .common-title h4{
+    font-size: 10px;
+  }  
+  .common-sub{
+    font-size: 9px;
+    line-height: 1.3;
+  }
 }
