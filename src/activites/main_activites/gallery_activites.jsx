@@ -1,12 +1,27 @@
 import "../../App.css";
 import "../activites.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CommonActivites from "./common_activites";
 import Footer from "../../default/footer";
-import { Gallery11, Gallery12 } from "../../data/gallery";
+/*import { Gallery11, Gallery12 } from "../../data/gallery";*/
 
 function ActivitesGallery() {
   const [activeButton, setActiveButton] = useState("12");
+  const [Gallery11, setGallery11] = useState([]);
+  const [Gallery12, setGallery12] = useState([]);
+  useEffect(() => {
+    fetch("http://54.180.31.212:8080/api/post/all?semester=11&type=activity") // 11기기
+      .then((response) => response.json())
+      .then((data) => setGallery11(data)) // 가져온 데이터를 상태에 저장
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+  useEffect(() => {
+    fetch("http://54.180.31.212:8080/api/post/all?semester=12&type=activity") // 11기기
+      .then((response) => response.json())
+      .then((data) => setGallery12(data)) // 가져온 데이터를 상태에 저장
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+  useEffect(() => console.log(Gallery11), [Gallery11]);
   return (
     <div id="page_container">
       <div id="atv-project_header">
@@ -39,13 +54,21 @@ function ActivitesGallery() {
           {activeButton === "11" ? (
             <>
               {Gallery11.map((i) => (
-                <CommonActivites title={i.title} subtitle={i.subtitle} />
+                <CommonActivites
+                  title={i.title}
+                  subtitle={i.subtitle}
+                  imageUrl={i.postImages[0].imageUrl}
+                />
               ))}
             </>
           ) : (
             <>
               {Gallery12.map((i) => (
-                <CommonActivites title={i.title} subtitle={i.subtitle} />
+                <CommonActivites
+                  title={i.title}
+                  subtitle={i.subtitle}
+                  imageUrl={i.postImages[0].imageUrl}
+                />
               ))}
             </>
           )}

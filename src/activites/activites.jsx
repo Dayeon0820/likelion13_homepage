@@ -19,11 +19,11 @@ function Activites() {
   const subtitle = "멋쟁이사자처럼 at 국민대의 커리큘럼과 활동들을 소개합니다";
   const buttons = [
     {
-      title: "12기 교육 일정",
+      title: "13기 교육 일정",
       detail: "CURRICULUM",
     },
     {
-      title: "12기 세션안내",
+      title: "13기 세션안내",
       detail: "SESSION",
     } /*
     {

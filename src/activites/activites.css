@@ -4,22 +4,25 @@
   /* background: #444; */
 }
 
-
 /* 커리큘럼 페이지 */
-#curriculum_main{
+#curriculum_main {
   /* border: 1px solid #fff; */
   padding: 20px 6%;
   width: 100%;
 }
 
-#atv_curriculum-img_box{
+#atv_curriculum-img_box {
   width: 90%;
+<<<<<<< HEAD
   /* height: 300px; */
   height: clamp(150px, 20vw, 300px); 
+=======
+  height: 300px;
+>>>>>>> origin/gallery/mobile
   display: flex;
   justify-content: center;
   align-items: center;
-/*   background: #333; */
+  /*   background: #333; */
   margin: 0 auto 20px;
 }
 
@@ -30,21 +33,20 @@
   object-fit: contain;
 }
 
-
-#curriculum_footer{
+#curriculum_footer {
   height: 180px;
   padding: 12px 1%;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #585858;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
 }
 #atv_footer-btnBox {
   display: flex;
   /* height: 50px; */
   width: 92%;
   margin: 0 auto;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
 }
 .atv_footer-btn {
   background-color: var(--orange);
@@ -72,15 +74,15 @@
   margin: 0 auto;
   width: 92%;
   height: 80%;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
 }
-.gridBox{
+.gridBox {
   width: 100%;
   height: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .gridBox img {
   width: 100%;
@@ -91,6 +93,28 @@
   justify-self: center;
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 950px) {
+  #curriculum_main {
+    padding: 4% 3%;
+  }
+  #atv_curriculum-img_box {
+    width: 85%;
+  }
+}
+@media (max-width: 880px) {
+  .gridBox img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 680px) {
+  .gridBox img {
+    max-width: 120px;
+  }
+}
+>>>>>>> origin/gallery/mobile
 
 #atv-footer-imgBox > .single {
   width: 100%;
@@ -98,7 +122,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 #atv-footer-imgBox > .single > img {
   width: 100%;
@@ -107,6 +130,7 @@
   object-fit: contain;
 }
 
+<<<<<<< HEAD
 @media (max-width: 950px){
   #curriculum_main{
     padding: 4% 3%;
@@ -143,8 +167,10 @@
 
 
 
+=======
+>>>>>>> origin/gallery/mobile
 /*session 페이지 */
-.session_main{
+.session_main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -152,8 +178,8 @@
   margin: 10px 0;
 }
 
-.atv-sections-container{
-  height: auto; 
+.atv-sections-container {
+  height: auto;
   /* background: #666; */
   display: flex;
   flex-direction: column;
@@ -168,13 +194,16 @@
   /* max-height: 50%; */
 }
 
-
 .atv-section_title {
   width: 80px;
   display: flex;
   justify-content: flex-end;
   padding-top: 10px;
+<<<<<<< HEAD
   /* border: 1px solid #fff; */
+=======
+  /*   border: 1px solid #fff; */
+>>>>>>> origin/gallery/mobile
 }
 
 .atv-section_title h1 {
@@ -190,7 +219,7 @@
   width: calc(100% - 80px);
   padding: 10px 0;
   margin-left: 20px;
- /*  border: 1px solid #fff; */
+  /*  border: 1px solid #fff; */
 }
 .atv-section_column:last-child {
   border-bottom: 1px solid rgba(255, 119, 16, 0.3);
@@ -201,19 +230,18 @@
   font-size: 14px;
   font-weight: 500;
   height: 15%;
- /*  border: 1px solid #fff; */
+  /*  border: 1px solid #fff; */
 }
 
 .atv-section-innerbox {
   width: 100%;
   height: 85%;
   display: flex;
-/*   flex-grow: 1; */
+  /*   flex-grow: 1; */
   align-items: flex-start;
   justify-content: space-between;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   padding-top: 2%;
-  
 }
 
 .atv-section-innerbox p {
@@ -226,14 +254,14 @@
 }
 
 .atv-section-innerbox_left {
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   width: 43%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
- /*  align-items: center; */
- overflow: hidden;
+  /*  align-items: center; */
+  overflow: hidden;
 }
 
 .session_trackBox {
@@ -256,12 +284,16 @@
   /* height: 22%; */
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content:center;
   flex-wrap: nowrap;
+=======
+  justify-content: center;
+>>>>>>> origin/gallery/mobile
   gap: 3%;
   margin: 50px 0;
-/*   background: #888; */
-/* border: 1px solid #fff; */
+  /*   background: #888; */
+  /* border: 1px solid #fff; */
 }
 
 .session-footer_btn {
@@ -275,7 +307,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #1A1A1A;
+  background: #1a1a1a;
 }
 
 .session-footer_btn h3 {
@@ -300,32 +332,37 @@
 }
 
 @media (max-width: 1200px) {
-  .atv-section{
+  .atv-section {
     width: 100%;
     height: 180px;
   }
-  .atv-section-innerbox{
+  .atv-section-innerbox {
     flex-direction: column;
     justify-content: space-between;
+<<<<<<< HEAD
+=======
+    /*    border: 1px solid #fff; */
+>>>>>>> origin/gallery/mobile
     gap: 4%;
   }
-  .atv-section-innerbox p{
+  .atv-section-innerbox p {
     width: 100%;
     height: auto;
   }
-  .atv-section-innerbox_left{
+  .atv-section-innerbox_left {
     width: 100%;
     height: auto;
-   /*  flex-wrap: nowrap; */
+    /*  flex-wrap: nowrap; */
     justify-content: flex-start;
-   /*  border: 1px solid #fff; */
+    /*  border: 1px solid #fff; */
   }
-  .session_trackBox{
+  .session_trackBox {
     padding: 8px 9px;
     margin: 1% 2%;
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px){
   .atv-section{
     height: 165px;
@@ -385,6 +422,8 @@
 }
 
 
+=======
+>>>>>>> origin/gallery/mobile
 /*project page*/
 
 .atv_project-title {
@@ -418,6 +457,28 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  #atv-project_header {
+    display: flex;
+    margin: 0 0 20px 20px;
+  }
+
+  #atv-project-main_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 530px) {
+  #atv-project_main {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* common components*/
@@ -476,4 +537,56 @@
   font-weight: 500;
   font-size: 12px;
   margin: 12px 14px 0 14px;
+}
+@media (max-width: 530px) {
+  .common_atvBox {
+    width: 95%;
+    max-width: 148px;
+    min-width: 122px;
+    height: 115px;
+  }
+
+  .common_atv-img img {
+    height: 75px;
+  }
+
+  .common_atv-subtitle {
+    font-weight: 500;
+    font-size: 8px;
+    margin: 5px 14px 2px 14px;
+  }
+
+  .common_atv-name {
+    margin-top: 3px;
+    height: 10px;
+  }
+
+  .common_atv-name h2 {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 1200px) {
+  .common_atvBox {
+    width: 200px;
+  }
+
+  .common_atv-img img {
+    height: 104px;
+  }
+
+  .common_atv-subtitle {
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .common_atv-name {
+    margin-top: 7px;
+    height: 10px;
+  }
+
+  .common_atv-name h2 {
+    font-size: 12px;
+  }
 }
