@@ -15,7 +15,7 @@ function ActivitesCurriculum() {
       <Subtitle title={title} subtitle={subtitle} P={p} />
       <div id="curriculum_main" className="activites_main common_main">
         <section id="atv_curriculum-img_box">
-          <img id="atv_curriculum-img" src="./curriculum.png" />
+          <img id="atv_curriculum-img" src="./curriculum.svg" />
         </section>
         <section
           id="curriculum_footer"
