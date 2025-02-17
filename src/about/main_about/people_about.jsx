@@ -11,7 +11,7 @@ function PeopleAbout() {
   const p = `2025년 13기 운영진을 소개합니다. 13기 운영진은 개발, 디자인, 홍보부, 총무 파트로 구성되어 있습니다.`;
   const [members, setMembers] = useState([]);
   useEffect(() => {
-    fetch("http://54.180.31.212:8080/api/manager/all")
+    fetch("/api/manager/all")
       .then((response) => response.json())
       .then((data) => setMembers(data)) // 가져온 데이터를 상태에 저장
       .catch((error) => console.error("Error fetching data:", error));

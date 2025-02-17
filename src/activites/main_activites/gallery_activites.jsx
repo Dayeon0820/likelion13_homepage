@@ -10,13 +10,13 @@ function ActivitesGallery() {
   const [Gallery11, setGallery11] = useState([]);
   const [Gallery12, setGallery12] = useState([]);
   useEffect(() => {
-    fetch("http://54.180.31.212:8080/api/post/all?semester=11&type=activity") // 11기기
+    fetch("/api/post/all?semester=11&type=activity") // 11기기
       .then((response) => response.json())
       .then((data) => setGallery11(data)) // 가져온 데이터를 상태에 저장
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   useEffect(() => {
-    fetch("http://54.180.31.212:8080/api/post/all?semester=12&type=activity") // 11기기
+    fetch("/api/post/all?semester=12&type=activity") // 11기기
       .then((response) => response.json())
       .then((data) => setGallery12(data)) // 가져온 데이터를 상태에 저장
       .catch((error) => console.error("Error fetching data:", error));
