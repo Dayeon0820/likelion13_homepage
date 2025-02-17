@@ -25,11 +25,18 @@ const Footer = () => {
           <a href="#" className="faceBookLink">
             <img src="/Facebook.png" alt="Facebook" />
           </a>
-          <a href="#" className="instagramLink">
+          <a
+            href="https://www.instagram.com/likelion_kmu/"
+            className="instagramLink"
+          >
             <img src="/instagram.png" alt="Instagram" />
           </a>
         </div>
-        <img src={LikeLionKMULogo} alt="Like Lion KMU Logo" className="kmuLogo" />
+        <img
+          src={LikeLionKMULogo}
+          alt="Like Lion KMU Logo"
+          className="kmuLogo"
+        />
         <p>@2025 likelion X KMU All rights reserved</p>
       </div>
 
@@ -75,4 +82,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
