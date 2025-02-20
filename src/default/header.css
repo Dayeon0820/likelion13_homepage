@@ -1,105 +1,106 @@
-.header{
-    width: 100vw;
-    height: 50px;
-    box-sizing: border-box;
-    padding: 10px 5vw;
-    background: #111;
-    border-bottom: 1px solid #585858;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 9999;
+.header {
+  width: 100vw;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 10px 5vw;
+  background: #111;
+  border-bottom: 1px solid #585858;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
 }
-.logoTitle{
-    color: #fff;
-    display: inline-block;
-    font-size: 17px;
-    /* border: 1px solid #fff; */
-    display: flex;
-    align-items: center;
-    gap: 3px;
+.logoTitle {
+  color: #fff;
+  display: inline-block;
+  font-size: 17px;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
-.logoTitle:nth-child(1)::before{
-    content:"";
-    display: inline-block;
-    height: 17px;
-    width: 22px;
-    background: url("../img/LIKELION\ UNIV_brandlogo_small.png")no-repeat center;
-    background-size: contain;
-    /* border: 1px solid #fff; */
+.logoTitle:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  height: 17px;
+  width: 22px;
+  background: url("../img/LIKELION\ UNIV_brandlogo_small.png") no-repeat center;
+  background-size: contain;
+  /* border: 1px solid #fff; */
 }
-.logoTitle > a > .xTxt{
-    margin: 0 3px;
+.logoTitle > a > .xTxt {
+  margin: 0 3px;
 }
-.logoHighlight{
-    color: #FF7710;
+.logoHighlight {
+  color: #ff7710;
 }
 
-.headerNavbar{
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
-   /*  border: 1px solid #fff; */
-    font-size: 13px;
-    font-weight: 500;
+.headerNavbar {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  /*  border: 1px solid #fff; */
+  font-size: 13px;
+  font-weight: 500;
 }
-.headerNavbar > ul{
-    display: flex;
-    gap: 25px;
+.headerNavbar > ul {
+  display: flex;
+  gap: 25px;
 }
 .headerNavbar > ul > li {
-    cursor: pointer;
-   /*  border: 1px solid #fff; */
+  cursor: pointer;
+  /*  border: 1px solid #fff; */
 }
-.headerNavbar > ul > li > a:hover{
-    color: #FF7710;
-    transition: color 0.3s ease;
+.headerNavbar > ul > li > a:hover {
+  color: #ff7710;
+  transition: color 0.3s ease;
 }
-.active{
-    color: #FF7710;
-    font-weight: bold;
-}
-
-.headerNavbar > .loginBox{
-    background: #FF7710;
-    border: none;
-    padding: 5px 16px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-.headerNavbar > .loginBox:hover{
-    background: #fff;
-    color: #FF7710;
+.active {
+  color: #ff7710;
+  font-weight: bold;
 }
 
-@media (max-width: 680px){
-    /* .logoLink:nth-child(1){
+.headerNavbar > .loginBox {
+  background: #ff7710;
+  border: none;
+  padding: 5px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+.headerNavbar > .loginBox:hover {
+  background: #fff;
+  color: #ff7710;
+}
+
+@media (max-width: 680px) {
+  /* .logoLink:nth-child(1){
         border: 1px solid #fff;
     } */
-    .logoTitle:nth-child(1)::before{
-        width: 20px;
-    }
-    .logoLink > .logoTxt{
-        border: 1px solid #fff;
-        display: none;
-    }
-    .logoTitle{
-        font-size: 14px;
-    }
+  .logoTitle:nth-child(1)::before {
+    width: 20px;
+  }
+  .logoLink > .logoTxt {
+    border: 1px solid #fff;
+    display: none;
+  }
+  .logoTitle {
+    font-size: 14px;
+  }
 
-    .headerNavbar{
-        font-size: 11px;
-        gap: 15px;
-    }
+  .headerNavbar {
+    font-size: 11px;
+    gap: 15px;
+  }
 
-    .headerNavbar > .loginBox{
-        font-size: 11px;
-        padding: 4px 10px;
-        border-radius: 4px;
-    }
+  .headerNavbar > .loginBox {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
 }

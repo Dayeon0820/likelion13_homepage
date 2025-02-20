@@ -1,82 +1,77 @@
-#main{
-    padding-top: 50px;
-    height: 100vh;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;/* 스크롤 */
+#main {
+  padding-top: 50px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory; /* 스크롤 */
 }
 
-.mainSection{
-    /* width: 100vw; */
-    width: 100%;
-    height: calc(100vh - 50px);
-    padding: 8vh 7vw;
-    /* border: 1px solid #fff; */ /* 임시 구분용 */
-
-    
+.mainSection {
+  /* width: 100vw; */
+  width: 100%;
+  height: calc(100vh - 50px);
+  padding: 8vh 7vw;
+  /* border: 1px solid #fff; */ /* 임시 구분용 */
 }
 
-.scrollSection{ 
-    scroll-snap-align: end;
+.scrollSection {
+  scroll-snap-align: end;
 }
-.scrollSection_center{
-    scroll-snap-align: center;
+.scrollSection_center {
+  scroll-snap-align: center;
 }
-.scrollSection_start{
-    scroll-snap-align: start;
+.scrollSection_start {
+  scroll-snap-align: start;
 }
-
 
 /* =====버튼===== */
-.joinBtn{
-    width: 130px;
-    height: 32px;
-    color: #FF7710;
-    border: 1px solid #FF7710;
-    border-radius: 8px;
-    background: #111;
-    padding: 5px;
-    align-self: flex-end;
+.joinBtn {
+  width: 130px;
+  height: 32px;
+  color: #ff7710;
+  border: 1px solid #ff7710;
+  border-radius: 8px;
+  background: #111;
+  padding: 5px;
+  align-self: flex-end;
 }
-.commonBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out, background 0.4s, ;
+.commonBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out, background 0.4s;
 }
 .commonBtn > a {
-    color: #FF7710;
+  color: #ff7710;
 }
 
-.commonBtn:hover{
-    transform: scale(1.04);
-    background: #FF7710;
-    border: 1px solid #111;
+.commonBtn:hover {
+  transform: scale(1.04);
+  background: #ff7710;
+  border: 1px solid #111;
 }
-.commonBtn:hover a{
-    color: #111;
+.commonBtn:hover a {
+  color: #111;
 }
 
-
-
-#MobileSection{
-    display: none !important;
-} 
+#MobileSection {
+  display: none !important;
+}
 
 /* =======footer-container====== */
 .footer-container {
-   /*  border: 1px solid #fff; */
-    min-height: 25vh; /* Footer가 최소한 30% 높이를 차지하도록 설정 */
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  
+  /*  border: 1px solid #fff; */
+  min-height: 25vh; /* Footer가 최소한 30% 높이를 차지하도록 설정 */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 
-  @media (max-width: 524px){
-    #MobileSection{
-        display: block !important;
-    }
-    .footer-container{
-        display: none;
-    }
+@media (max-width: 524px) {
+  #MobileSection {
+    display: block !important;
   }
+  .footer-container {
+    display: none;
+  }
+}
