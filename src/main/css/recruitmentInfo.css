@@ -100,6 +100,7 @@
 .recruitmentContainer > .imgBox {
   width: 62%;
   max-width: 879px; /* pc에서 테두리 2개되는 문제 */
+  max-height: 555px;
   height: 100%;
   background: url("../../img/likelion_group_photo.jpg") no-repeat center;
   object-fit: contain;

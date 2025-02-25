@@ -9,7 +9,7 @@ const RecruitmentInfo = () => {
   const scheduleData = [
     { label: "서류 지원", value: "2025.02.10(월) - 2025.03.2(일) 오후 6시" },
     { label: "서류 합격일 발표", value: "2025.03.03(월)" },
-    { label: "면접", value: "2025.03.02(화) - 2025.03.07(금)" },
+    { label: "면접", value: "2025.03.04(화) - 2025.03.07(금)" },
     { label: "최종발표", value: "추후 공지 예정" },
     { label: "전체 OT", value: "2025.03.14(금)" },
   ];
