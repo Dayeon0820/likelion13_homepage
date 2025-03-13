@@ -7,6 +7,7 @@ import Footer from "./default/footer";
 import Activites from "./activites/activites";
 import MainPage from "./main/main";
 import About from "./about/about";
+import Login from "./signup/login";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/activities" element={<Activites />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
