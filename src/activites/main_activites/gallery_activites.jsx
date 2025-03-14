@@ -6,22 +6,23 @@ import Footer from "../../default/footer";
 /*import { Gallery11, Gallery12 } from "../../data/gallery";*/
 
 function ActivitesGallery() {
+  const baseURL = "https://kmu-likelion.link/api/";
   const [activeButton, setActiveButton] = useState("12");
   const [Gallery11, setGallery11] = useState([]);
   const [Gallery12, setGallery12] = useState([]);
   useEffect(() => {
-    fetch("/api/post/all?semester=11&type=activity") // 11기
+    fetch(`${baseURL}gallery/activities?semester=11`) // 11기
       .then((response) => response.json())
       .then((data) => setGallery11(data)) // 가져온 데이터를 상태에 저장
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   useEffect(() => {
-    fetch("/api/post/all?semester=12&type=activity") // 12기
+    fetch(`${baseURL}gallery/activities?semester=12`) // 12기
       .then((response) => response.json())
       .then((data) => setGallery12(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
-  useEffect(() => console.log(Gallery11), [Gallery11]);
+  useEffect(() => console.log(Gallery11, Gallery12));
   return (
     <div id="page_container">
       <div id="atv-project_header">
@@ -57,7 +58,7 @@ function ActivitesGallery() {
                 <CommonActivites
                   title={i.title}
                   subtitle={i.subtitle}
-                  imageUrl={i.postImages[0].imageUrl}
+                  imageUrl={i.gallery_images[0].image_url}
                 />
               ))}
             </>
@@ -67,7 +68,7 @@ function ActivitesGallery() {
                 <CommonActivites
                   title={i.title}
                   subtitle={i.subtitle}
-                  imageUrl={i.postImages[0].imageUrl}
+                  imageUrl={i.gallery_images[0].image_url}
                 />
               ))}
             </>
