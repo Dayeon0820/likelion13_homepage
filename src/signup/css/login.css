@@ -1,0 +1,126 @@
+.signup_container {
+  width: 100vw;
+  height: auto;
+}
+
+.signup_body {
+  /*  height: calc(100vh - 110px); */ /*footer 높이 제외 */
+  width: 100vw;
+  height: auto;
+  /* overflow-y: auto; */
+  padding: 0 3vw;
+  padding-top: 50px;
+}
+
+/* 로그인 페이지 */
+
+.login_form {
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: auto 20px;
+}
+
+.login_input {
+  border: 1px solid #c5c5c5;
+  height: 40px;
+  width: 60%;
+  max-width: 380px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.login_input span {
+  font-size: 14px;
+  color: var(--orange);
+  font-weight: 500;
+  width: 25%;
+}
+
+.login_input input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 100%;
+  width: 65%;
+}
+
+.login_input input::placeholder {
+  color: 6B6B6B;
+  font-size: 13px;
+}
+.login_input input:focus {
+  color: #c5c5c5;
+  font-size: 13px;
+}
+.login_aTxt {
+  color: #c5c5c5;
+  font-size: 11px;
+  padding-bottom: 2px;
+}
+.login_a {
+  color: #c5c5c5;
+  border-bottom: #c5c5c5 1px solid;
+  padding-bottom: 2px;
+  font-size: 11px;
+}
+
+.login_button-container {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_button {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 524px) {
+  .login_input {
+    height: 30px;
+  }
+
+  .login_input span {
+    font-size: 10px;
+    width: 30%;
+  }
+
+  .login_input input::placeholder {
+    font-size: 9px;
+  }
+  .login_input input:focus {
+    font-size: 9px;
+  }
+
+  .login_button {
+    width: 130px;
+    height: 33px;
+    font-size: 13px;
+  }
+
+  .login_aTxt {
+    font-size: 9px;
+  }
+  .login_a {
+    color: #c5c5c5;
+    border-bottom: #c5c5c5 1px solid;
+    padding-bottom: 2px;
+    font-size: 9px;
+  }
+}

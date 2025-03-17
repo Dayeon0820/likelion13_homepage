@@ -1,8 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import Title from "./common";
-import "./signup.css";
+import "./css/login.css";
+import Footer from "../default/footer";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   return (
     <div className="signup_container">
       <main className="signup_body black">
@@ -16,15 +19,20 @@ function Login() {
             <span>비밀번호</span>
             <input placeholder="비밀번호를 입력해주세요" />
           </div>
+          <a className="login_a">비밀번호 찾기</a>
         </form>
-        <a className="login_a">비밀번호 찾기</a>
         <div className="login_button-container">
           <div className="login_button">로그인</div>
-          <a className="login_a">
-            <span>기존 회원이 아니신가요?</span> 회원가입하기
-          </a>
+
+          <span className="login_aTxt">
+            기존 회원이 아니신가요?{" "}
+            <a className="login_a" onClick={() => navigate("/signup")}>
+              회원가입하기
+            </a>{" "}
+          </span>
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 }

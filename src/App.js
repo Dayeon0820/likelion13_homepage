@@ -8,6 +8,7 @@ import Activites from "./activites/activites";
 import MainPage from "./main/main";
 import About from "./about/about";
 import Login from "./signup/login";
+import Signup from "./signup/signup";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/activities" element={<Activites />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
