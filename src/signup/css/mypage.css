@@ -1,0 +1,99 @@
+#mypage_section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#mypage_section {
+  width: 73%;
+  height: 200px;
+  max-width: 598px;
+  border-radius: 15px;
+  border: 1px solid #585858;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+}
+
+.mypage_Img-container {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.mypage_Img-container img {
+  height: 100%;
+  aspect-ratio: 1 / 1; /* 가로:세로 비율을 1:1로 설정 */
+  object-fit: cover;
+  border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+}
+
+.mypage_info-container {
+  width: 55%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mypape_info-name {
+  display: flex;
+  align-items: center;
+}
+
+.mypape_info-name > h4 {
+  color: var(--orange);
+  font-size: 16px;
+  margin-right: 7px;
+}
+
+.mypape_info-name > h6 {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.mypage_linkBox {
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.mypage_linkBox > span {
+  font-size: 10px;
+  color: #c5c5c5;
+  margin: 3px;
+}
+
+.mypage_detailBox {
+  width: 80%;
+}
+
+.mypage_detail-innerBox {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: #585858 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mypage_detail-innerBox span {
+  font-size: 12px;
+}
+
+.mypage_detail_key {
+  color: #c5c5c5;
+  width: 40%;
+}
+
+.mypage_detail_value {
+  color: white;
+  width: 55%;
+}

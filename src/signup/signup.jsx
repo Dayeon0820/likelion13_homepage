@@ -68,6 +68,10 @@ function Signup() {
               </div>
             );
           })}
+          <div id="signup-buttonBox">
+            <button className="signup-btn signup_cancle">취소</button>
+            <button className="signup-btn signup_submit">가입하기</button>
+          </div>
         </form>
       </main>
       <Footer></Footer>

@@ -94,6 +94,7 @@
 @media (max-width: 524px) {
   .login_input {
     height: 30px;
+    width: 70%;
   }
 
   .login_input span {
@@ -106,6 +107,10 @@
   }
   .login_input input:focus {
     font-size: 9px;
+  }
+
+  .login_button-container {
+    height: 50vh;
   }
 
   .login_button {

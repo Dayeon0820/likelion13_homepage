@@ -34,6 +34,14 @@ const Header = () => {
             </NavLink>
           </li>
           {/* <li><NavLink to="/community" className={({ isActive }) => isActive ? "active" : ""}>COMMUNITY</NavLink></li> */}
+          <li>
+            <NavLink
+              to="/mypage"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              MYPAGE
+            </NavLink>
+          </li>
         </ul>
         <button className="loginBox" onClick={() => navigate("/login")}>
           LOGIN

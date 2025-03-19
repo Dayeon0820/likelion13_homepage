@@ -81,13 +81,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   margin-left: 20px;
+}
+
+#signup-buttonBox {
+  width: 60%;
+  max-width: 600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.signup-btn {
+  width: 47%;
+  height: 37px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+.signup_cancle {
+  background-color: #585858;
+}
+
+.signup_submit {
+  background-color: var(--orange);
 }
 
 @media (max-width: 524px) {
   .signup-input_innerBox {
     width: 80%;
+  }
+
+  .signup-input_innerBox > h4 {
+    font-size: 8px;
+  }
+
+  #verityEmail {
+    font-size: 9px;
+  }
+
+  .signup-input_title {
+    font-size: 11px;
+  }
+
+  .signup-btn {
+    font-size: 11px;
   }
 }
