@@ -120,12 +120,23 @@
     width: 80%;
   }
 
+  .signup-innerBox_second {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .email-input {
+    width: calc(100% - 70px);
+  }
+
   .signup-input_innerBox > h4 {
     font-size: 8px;
   }
 
   #verityEmail {
     font-size: 9px;
+    width: 25%;
+    height: 84%;
   }
 
   .signup-input_title {

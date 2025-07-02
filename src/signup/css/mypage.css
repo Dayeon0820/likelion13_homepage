@@ -1,7 +1,9 @@
 #mypage_section-container {
   width: 100%;
+  height: 57vh;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 #mypage_section {
@@ -10,7 +12,7 @@
   max-width: 598px;
   border-radius: 15px;
   border: 1px solid #585858;
-  padding: 20px;
+  padding: 20px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,6 +24,7 @@
   height: 90%;
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 .mypage_Img-container img {
@@ -34,7 +37,7 @@
 }
 
 .mypage_info-container {
-  width: 55%;
+  width: 90%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -71,12 +74,12 @@
 }
 
 .mypage_detailBox {
-  width: 80%;
+  width: 100%;
 }
 
 .mypage_detail-innerBox {
   width: 100%;
-  padding: 5px;
+  padding: 7px;
   margin-bottom: 5px;
   border-bottom: #585858 1px solid;
   display: flex;
@@ -85,15 +88,97 @@
 }
 
 .mypage_detail-innerBox span {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .mypage_detail_key {
   color: #c5c5c5;
-  width: 40%;
+  width: 25%;
+  margin-right: 15px;
 }
 
 .mypage_detail_value {
   color: white;
-  width: 55%;
+  width: 75%;
+}
+
+@media (max-width: 900px) {
+  #mypage_section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 514px) {
+  #mypage_section-container {
+    margin-top: 0;
+  }
+
+  #mypage_section {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    height: 90%;
+  }
+
+  .mypage_Img-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .mypage_Img-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 가로:세로 비율을 1:1로 설정 */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--orange);
+  }
+
+  .mypage_info-container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mypape_info-name > h4 {
+    font-size: 18px;
+  }
+
+  .mypape_info-name > h6 {
+    font-size: 16px;
+  }
+
+  .mypage_linkBox {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  .mypage_linkBox > span {
+    font-size: 11px;
+    color: #c5c5c5;
+    margin: 3px;
+  }
+
+  .mypage_detailBox {
+    width: 60vw;
+    padding: 17px 15px;
+    background-color: #1a1a1a;
+    border: 1px solid #585858;
+    border-radius: 5px;
+  }
+
+  .mypage_detail-innerBox {
+    border: none;
+  }
+
+  .mypage_detail-innerBox span {
+    font-size: 13px;
+  }
 }
