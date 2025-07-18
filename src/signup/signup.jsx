@@ -74,7 +74,7 @@ function Signup() {
           </div>
         </form>
       </main>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }
