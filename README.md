@@ -16,7 +16,7 @@
 
 ## 📸 메인 페이지 스크린샷
 
-<img width="1440" height="4532" alt="Image" src="https://github.com/user-attachments/assets/4d177f30-48df-4287-b522-e3d2ec19fc69" />
+<img width="864" height="2719" alt="Image" src="https://github.com/user-attachments/assets/4d177f30-48df-4287-b522-e3d2ec19fc69" />
 
 <br>
 
