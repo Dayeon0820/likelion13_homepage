@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 🦁 멋쟁이사자처럼 13기 홈페이지
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> [ 멋쟁이사자처럼 13기를 소개하고 활동 내역을 아카이빙하기 위한 공식 홈페이지입니다. ]
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## 🚀 배포 링크
 
-### `npm start`
+> **[ kmu-likelion13.site ]**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> **⚠️ 프로젝트 안내**
+>
+> 현재는 동아리 홍보 기간이 종료되어 서버 운영이 중지된 상태입니다. 따라서 데이터를 동적으로 불러오는 일부 페이지(예: 멤버 소개, 프로젝트 목록 등)가 정상적으로 렌더링되지 않을 수 있습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## 📸 메인 페이지 스크린샷
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1440" height="4532" alt="Image" src="https://github.com/user-attachments/assets/4d177f30-48df-4287-b522-e3d2ec19fc69" />
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ 주요 기능
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+이 홈페이지에서 제공하는 주요 기능입니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **메인 페이지:** [ 13기 활동을 한눈에 볼 수 있는 인트로 및 요약 ]
+* **소개 페이지:** [  멋쟁이사자처럼 13기 운영진 소개 ]
+* **프로젝트 갤러리:** [ 13기 내부 스터디, 해커톤 등 프로젝트 결과물 아카이빙 ]
+* **연락처:** [ 문의를 위한 소셜 미디어 링크 ]
+* **반응형 웹:** [ 모바일, 태블릿, 데스크탑 환경을 모두 지원 ]
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 💻 사용 기술
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **Frontend:** [ HTML5, CSS3, JavaScript (ES6+), React ]
+* **Deployment:** [ Vercel ]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 프로젝트 구조
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<pre>
+likelion13_homepage/
+├── index.html        # 메인 페이지
+├── about.html        # 소개 페이지
+├── projects/         # 프로젝트 관련 페이지
+│   ├── project1.html
+│   └── ...
+├── css/              # CSS 스타일시트
+│   ├── style.css
+│   └── responsive.css
+├── js/               # JavaScript 파일
+│   └── main.js
+└── assets/           # 이미지, 폰트 등 리소스
+    ├── images/
+    └── fonts/
+</pre>
