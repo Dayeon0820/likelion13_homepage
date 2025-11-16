@@ -15,9 +15,8 @@
 <br>
 
 ## 📸 메인 페이지 스크린샷
+<img width="922" height="612" alt="Image" src="https://github.com/user-attachments/assets/32690848-9904-4ca8-b3fd-ad5c2eb31f37" />
 
-<img width="864" height="2719" alt="Image" src="https://github.com/user-attachments/assets/4d177f30-48df-4287-b522-e3d2ec19fc69" />
-<img width="931" height="609" alt="Image" src="https://github.com/user-attachments/assets/2760dc37-e387-4a7e-aab9-9c6a019500ab" />
 <br>
 
 ## ✨ 주요 기능
